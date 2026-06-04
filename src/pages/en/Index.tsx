@@ -19,7 +19,7 @@ const pillars = [
   {
     title: "Responsible AI",
     description:
-      "We promote responsible development and use of artificial intelligence in Norway. Our work includes guidelines, best practices, and tools for ethical AI implementation.",
+      "We promote responsible development and use of artificial intelligence in the Netherlands. Our work includes guidelines, best practices, and tools for ethical AI implementation.",
     icon: Shield,
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/9162907a-6407-4f58-908a-72c3fb328131.png",
     path: "/en/activities/responsible-ai",
@@ -39,14 +39,14 @@ const pillars = [
 const stats = [
   { value: "3", label: "Pillars", icon: TrendingUp },
   { value: "1200+", label: "AI responses analyzed", icon: BarChart3 },
-  { value: "Norway’s first", label: "Bias indicator", icon: Award },
-  { value: "Collaboration", label: "with LDO", icon: Users },
+  { value: "The first Dutch", label: "Bias indicator", icon: Award },
+  { value: "Collaboration", label: "with institutions", icon: Users },
 ];
 
 const questions = [
 {
   question: "How do we know whether an AI system treats people of different ages, genders, or nationalities fairly?",
-  context: "We analyze whether language models provide systematically different answers based on protected or vulnerable groups in a Norwegian context.",
+  context: "We analyze whether language models provide systematically different answers based on protected or vulnerable groups in a Dutch context.",
   pillar: "Bias",
   color: "#5A23C9",
 },
@@ -69,8 +69,8 @@ const questions = [
   color: "#5A23C9",
 },
 {
-  question: "If an AI system misrepresents Norwegian people, culture, or identity — who corrects it?",
-  context: "We examine how global models handle Norwegian language, culture, and social conditions.",
+  question: "If an AI system misrepresents Dutch people, culture, or identity — who corrects it?",
+  context: "We examine how global models handle Dutch language, culture, and social conditions.",
   pillar: "Bias",
   color: "#5A23C9",
 },
@@ -149,13 +149,7 @@ const questions = [
 ];
 
 const milestones = [
-  { year: "Feb 2026", title: "NAIE launched publicly", description: "On February 2, 2026, Norsk AI-Etikkforening was officially launched to the public via LinkedIn." },
-  { year: "Feb 2026", title: "Kathinka Vik joins the board", description: "Kathinka became an official board member of the association." },
-  { year: "Sept 2025", title: "NAIE founded", description: "Norsk AI-Etikkforening was officially established as an independent, non-profit association to promote ethical AI in Norway. Founded by Wessel Braakman, Alejandra Palacio Perez and Teresa Dalen Herland." },
-  { year: "Sept 2025", title: "Updated NoBBQ benchmark released", description: "The updated version of NoBBQ includes 400 prompts tested against 3 AI systems." },
-  { year: "Mar 2025", title: "First NoBBQ results shared", description: "We shared the first results based on 40 prompts and responses." },
-  { year: "Jan 2025", title: "BBQ research translation started", description: "We ran a PoC based on 10 prompts across 4 categories (40 total)." },
-  { year: "2023-2024", title: "Multiple talks on AI bias", description: "The foundation for our research began in early 2024." },
+  { year: "June 2026", title: "NAIE Foundation registered", description: "On June 4th, 2026, The Dutch AI Ethics Foundation was registered in the Kamer van Koophandel." }
 ];
 
 export default function HomePage() {
@@ -188,7 +182,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
               <div className="w-2 h-2 bg-[#FF7A1A] rounded-full animate-pulse" />
-              <span className="text-sm text-purple-200">Norwegian AI Ethics Association</span>
+              <span className="text-sm text-purple-200">Dutch AI Ethics Foundation</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Ethical artificial{" "}
@@ -285,7 +279,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">What does NAIE do?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              We work across three core pillars to promote ethical and responsible use of artificial intelligence in Norway.
+              We work across three core pillars to promote ethical and responsible use of artificial intelligence in the Netherlands.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -327,7 +321,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">Milestones</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Our journey toward more ethical and responsible AI in Norway.
+              Our journey toward more ethical and responsible AI in the Netherlands.
             </p>
           </div>
           <div className="relative">
@@ -358,7 +352,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Want to learn more?</h2>
           <p className="text-purple-200 text-lg mb-8 max-w-2xl mx-auto">
-            Explore our results and resources, and learn more about how NAIE works toward ethical AI in Norway.
+            Explore our results and resources, and learn more about how NAIE works toward ethical AI in the Netherlands.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">

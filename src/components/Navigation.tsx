@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/naie_logo_v1_with_text_purple.svg";
 
 // Import your content arrays to dynamically translate asymmetric article slugs
-import { BLOGS as BLOGS_NO } from "@/content/no/blog";
+import { BLOGS as BLOGS_NO } from "@/content/nl/blog";
 import { BLOGS as BLOGS_EN } from "@/content/en/blog";
 
-type Lang = "no" | "en";
+type Lang = "nl" | "en";
 
 type NavItem = {
   label: string;
@@ -16,32 +16,32 @@ type NavItem = {
   children?: { label: string; path: string }[];
 };
 
-const navItemsNo: NavItem[] = [
-  { label: "Hjem", path: "/" },
-  { label: "Om oss", path: "/om-oss" },
+const navItemsNl: NavItem[] = [
+  { label: "Home", path: "/" },
+  { label: "Over Ons", path: "/over-ons" },
   {
-    label: "Aktiviteter",
-    path: "/aktiviteter",
+    label: "Activiteiten",
+    path: "/activiteiten",
     children: [
-      { label: "Bias", path: "/aktiviteter/bias" },
-      { label: "Ansvarlig AI", path: "/aktiviteter/ansvarlig-ai" },
-      { label: "Bærekraft", path: "/aktiviteter/baerekraft" },
+      { label: "Bias", path: "/activiteiten/bias" },
+      { label: "Verantwoorde AI", path: "/activiteiten/verantwoorde-ai" },
+      { label: "duurzaamheid", path: "/activiteiten/duurzaamheid" },
     ],
   },
   {
-    label: "Innsikt",
-    path: "/resultater",
+    label: "Inzicht",
+    path: "/resultaten",
     children: [
-      { label: "Resultater", path: "/resultater" },
-      { label: "Blogg", path: "/blogg" },
-      { label: "Ressurser", path: "/ressurser" },
-      { label: "Nyheter", path: "/nyheter" },
-      { label: "Presse & Arrangementer", path: "/presse-og-arrangementer" },
+      { label: "Resultaten", path: "/resultaten" },
+      { label: "Blog", path: "/blog" },
+      { label: "Resources", path: "/resources" },
+      { label: "Nieuws", path: "/nieuws" },
+      { label: "Pers & Events", path: "/pers-en-events" },
     ],
   },
-  { label: "For organisasjoner", path: "/for-organisasjoner" },
-  { label: "Medlemskap", path: "/medlemskap" },
-  { label: "Kontakt", path: "/kontakt" },
+  { label: "Voor organisaties", path: "/voor-organisaties" },
+  { label: "Deelnemerschap", path: "/deelnemerschap" },
+  { label: "Contact", path: "/contact" },
 ];
 
 const navItemsEn: NavItem[] = [
@@ -75,37 +75,37 @@ const navItemsEn: NavItem[] = [
 // Bidirectional lookup mapping table
 const pathTranslations: Record<string, string> = {
   "/": "/",
-  "/om-oss": "/about-us",
-  "/about-us": "/om-oss",
-  "/aktiviteter": "/activities",
-  "/activities": "/aktiviteter",
-  "/aktiviteter/bias": "/activities/bias",
-  "/activities/bias": "/aktiviteter/bias",
-  "/aktiviteter/ansvarlig-ai": "/activities/ansvarlig-ai",
-  "/activities/ansvarlig-ai": "/aktiviteter/ansvarlig-ai",
-  "/aktiviteter/baerekraft": "/activities/baerekraft",
-  "/activities/baerekraft": "/aktiviteter/baerekraft",
-  "/resultater": "/results",
-  "/results": "/resultater",
-  "/blogg": "/blog",
-  "/blog": "/blogg",
-  "/ressurser": "/resources",
-  "/resources": "/ressurser",
-  "/nyheter": "/news",
-  "/news": "/nyheter",
-  "/presse-og-arrangementer": "/press-and-events",
-  "/press-and-events": "/presse-og-arrangementer",
-  "/for-organisasjoner": "/for-organisations",
-  "/for-organisations": "/for-organisasjoner",
-  "/medlemskap": "/membership",
-  "/membership": "/medlemskap",
-  "/kontakt": "/contact",
-  "/contact": "/kontakt",
+  "/over-ons": "/about-us",
+  "/about-us": "/over-ons",
+  "/activiteiten": "/activities",
+  "/activities": "/activiteiten",
+  "/activiteiten/bias": "/activities/bias",
+  "/activities/bias": "/activiteiten/bias",
+  "/activiteiten/verantwoorde-ai": "/activities/responsible-ai",
+  "/activities/responsible-ai": "/activiteiten/verantwoorde-ai",
+  "/activiteiten/duurzaamheid": "/activities/baerekraft",
+  "/activities/baerekraft": "/activiteiten/duurzaamheid",
+  "/resultaten": "/results",
+  "/results": "/resultaten",
+  "/blog": "/blog",
+  "/blog": "/blog",
+  "/resources": "/resources",
+  "/resources": "/resources",
+  "/nieuws": "/news",
+  "/news": "/nieuws",
+  "/pers-en-events": "/press-and-events",
+  "/press-and-events": "/pers-en-events",
+  "/voor-organisaties": "/for-organisations",
+  "/for-organisations": "/voor-organisaties",
+  "/deelnemerschap": "/membership",
+  "/membership": "/deelnemerschap",
+  "/contact": "/contact",
+  "/contact": "/contact",
 };
 
 function getLangFromPath(pathname: string): Lang {
   const first = pathname.split("/")[1];
-  return first === "en" ? "en" : "no";
+  return first === "en" ? "en" : "nl";
 }
 
 function withLang(lang: Lang, path: string): string {
@@ -124,14 +124,14 @@ export default function Navigation() {
   const lang = useMemo(() => getLangFromPath(pathname), [pathname]);
   const base = `/${lang}`;
 
-  const items = useMemo(() => (lang === "en" ? navItemsEn : navItemsNo), [lang]);
+  const items = useMemo(() => (lang === "en" ? navItemsEn : navItemsNl), [lang]);
 
   // Safely extract the component path without the language parameter
   const currentPathNoLang = useMemo(() => {
     const parts = pathname.split("/");
     const maybeLang = parts[1];
 
-    if (maybeLang === "no" || maybeLang === "en") {
+    if (maybeLang === "nl" || maybeLang === "en") {
       const rest = "/" + parts.slice(2).join("/");
       // Keep root as "/" and strip training slashes safely
       return rest === "/" ? "/" : rest.replace(/\/$/, "") || "/";
@@ -274,15 +274,15 @@ export default function Navigation() {
             {/* Language Switcher */}
             <div className="flex items-center bg-[#F6F6F6] rounded-lg p-0.5">
               <button
-                onClick={() => switchLang("no")}
+                onClick={() => switchLang("nl")}
                 className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
-                  lang === "no"
+                  lang === "nl"
                     ? "bg-white text-[#3D148A] shadow-sm"
                     : "text-gray-500 hover:text-gray-700"
                 }`}
               >
-                <span className="text-base leading-none">🇳🇴</span>
-                <span className="hidden sm:inline">NB</span>
+                <span className="text-base leading-none">NL</span>
+                <span className="hidden sm:inline">NL</span>
               </button>
               <button
                 onClick={() => switchLang("en")}

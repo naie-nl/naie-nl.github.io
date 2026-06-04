@@ -414,9 +414,9 @@ export function Contact() {
                   {
                     icon: MapPin,
                     label: "Address",
-                    value: "Rud-ødegutua 19\n2030 Nannestad",
+                    value: "Albert van Damstraat 4\n1689XN Zwaag",
                   },
-                  { icon: Phone, label: "Org. no.", value: "932 552 728" },
+                  { icon: Phone, label: "Org. no.", value: "42075283" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">

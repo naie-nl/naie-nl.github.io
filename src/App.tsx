@@ -12,23 +12,23 @@ import AuthError from "@/pages/AuthError";
 import NotFound from "@/pages/NotFound";
 
 // Blog pages (separate per language)
-import { Blogg as BloggNo, BloggPost as BloggPostNo } from "@/pages/no/Blogg";
+import { Blog as BlogNl, BlogPost as BlogPostNl } from "@/pages/nl/Blog";
 import { Blog as BlogEn, BlogPost as BlogPostEn } from "@/pages/en/Blog";
 
 // Norwegian pages
-import IndexNo from "@/pages/no/Index";
-import OmOssNo from "@/pages/no/OmOss";
-import AktiviteterNo from "@/pages/no/Aktiviteter";
-import ResultaterNo from "@/pages/no/Resultater";
-import MedlemskapNo from "@/pages/no/Medlemskap";
+import IndexNl from "@/pages/nl/Index";
+import OverOnsNl from "@/pages/nl/OverOns";
+import ActiviteitenNl from "@/pages/nl/Activiteiten";
+import ResultatenNl from "@/pages/nl/Resultaten";
+import DeelnemerschapNl from "@/pages/nl/Deelnemerschap";
 import {
-  Ressurser as RessurserNo,
-  Nyheter as NyheterNo,
-  PresseOgArrangementer as PresseOgArrangementerNo,
-  ForOrganisasjoner as ForOrganisasjonerNo,
-  Kontakt as KontaktNo,
-} from "@/pages/no/SecondaryPages";
-import PersonsvernNo from "@/pages/no/Personsvern";
+  Resources as ResourcesNl,
+  Nieuws as NieuwsNl,
+  PersEnEvents as PersEnEventsNl,
+  VoorOrganisaties as VoorOrganisatiesNl,
+  Contact as ContactNl,
+} from "@/pages/nl/SecondaryPages";
+import PrivacyNl from "@/pages/nl/Privacy";
 
 // English pages
 import IndexEn from "@/pages/en/Index";
@@ -55,30 +55,30 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           {/* Root -> default language */}
-          <Route path="/" element={<Navigate to="/no" replace />} />
+          <Route path="/" element={<Navigate to="/nl" replace />} />
 
           {/* ===========================
-              Norwegian routes (/no)
+              Norwegian routes (/nl)
           =========================== */}
-          <Route path="/no" element={<IndexNo />} />
-          <Route path="/no/om-oss" element={<OmOssNo />} />
-          <Route path="/no/aktiviteter" element={<AktiviteterNo />} />
-          <Route path="/no/aktiviteter/:slug" element={<AktiviteterNo />} />
-          <Route path="/no/resultater" element={<ResultaterNo />} />
-          <Route path="/no/ressurser" element={<RessurserNo />} />
-          <Route path="/no/nyheter" element={<NyheterNo />} />
+          <Route path="/nl" element={<IndexNl />} />
+          <Route path="/nl/over-ons" element={<OverOnsNl />} />
+          <Route path="/nl/activiteiten" element={<ActiviteitenNl />} />
+          <Route path="/nl/activiteiten/:slug" element={<ActiviteitenNl />} />
+          <Route path="/nl/resultaten" element={<ResultatenNl />} />
+          <Route path="/nl/resources" element={<ResourcesNl />} />
+          <Route path="/nl/nieuws" element={<NieuwsNl />} />
           <Route
-            path="/no/presse-og-arrangementer"
-            element={<PresseOgArrangementerNo />}
+            path="/nl/pers-en-events"
+            element={<PersEnEventsNl />}
           />
-          <Route path="/no/for-organisasjoner" element={<ForOrganisasjonerNo />} />
-          <Route path="/no/medlemskap" element={<MedlemskapNo />} />
-          <Route path="/no/kontakt" element={<KontaktNo />} />
-          <Route path="/no/personsvern" element={<PersonsvernNo />} />
+          <Route path="/nl/voor-organisaties" element={<VoorOrganisatiesNl />} />
+          <Route path="/nl/deelnemerschap" element={<DeelnemerschapNl />} />
+          <Route path="/nl/contact" element={<ContactNl />} />
+          <Route path="/nl/privacy" element={<PrivacyNl />} />
 
-          {/* Blog under /no */}
-          <Route path="/no/blogg" element={<BloggNo />} />
-          <Route path="/no/blogg/:slug" element={<BloggPostNo />} />
+          {/* Blog under /nl */}
+          <Route path="/nl/blog" element={<BlogNl />} />
+          <Route path="/nl/blog/:slug" element={<BlogPostNl />} />
 
           {/* ===========================
               English routes (/en)
@@ -108,26 +108,26 @@ const App = () => (
           <Route path="/auth/error" element={<AuthError />} />
 
           {/* Backward compatibility redirects (Norwegian) */}
-          <Route path="/om-oss" element={<Navigate to="/no/om-oss" replace />} />
-          <Route path="/aktiviteter" element={<Navigate to="/no/aktiviteter" replace />} />
+          <Route path="/about-us" element={<Navigate to="/nl/about-us" replace />} />
+          <Route path="/activiteiten" element={<Navigate to="/nl/activiteiten" replace />} />
           <Route
-            path="/aktiviteter/:slug"
-            element={<Navigate to="/no/aktiviteter/:slug" replace />}
+            path="/activiteiten/:slug"
+            element={<Navigate to="/nl/activiteiten/:slug" replace />}
           />
-          <Route path="/resultater" element={<Navigate to="/no/resultater" replace />} />
-          <Route path="/ressurser" element={<Navigate to="/no/ressurser" replace />} />
-          <Route path="/nyheter" element={<Navigate to="/no/nyheter" replace />} />
+          <Route path="/resultaten" element={<Navigate to="/nl/resultaten" replace />} />
+          <Route path="/resources" element={<Navigate to="/nl/resources" replace />} />
+          <Route path="/nieuws" element={<Navigate to="/nl/nieuws" replace />} />
           <Route
-            path="/presse-og-arrangementer"
-            element={<Navigate to="/no/presse-og-arrangementer" replace />}
+            path="/pers-en-events"
+            element={<Navigate to="/nl/pers-en-events" replace />}
           />
           <Route
-            path="/for-organisasjoner"
-            element={<Navigate to="/no/for-organisasjoner" replace />}
+            path="/voor-organisaties"
+            element={<Navigate to="/nl/voor-organisaties" replace />}
           />
-          <Route path="/kontakt" element={<Navigate to="/no/kontakt" replace />} />
-          <Route path="/blogg" element={<Navigate to="/no/blogg" replace />} />
-          <Route path="/blogg/:slug" element={<Navigate to="/no/blogg/:slug" replace />} />
+          <Route path="/contact" element={<Navigate to="/nl/contact" replace />} />
+          <Route path="/blog" element={<Navigate to="/nl/blog" replace />} />
+          <Route path="/blog/:slug" element={<Navigate to="/nl/blog/:slug" replace />} />
           
           {/* Backward compatibility redirects (English) */}
           <Route path="/about-us" element={<Navigate to="/en/about-us" replace />} />

@@ -1,11 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/naie_logo_v1_white.svg";
 
-type Lang = "no" | "en";
+type Lang = "nl" | "en";
 
 function getLangFromPath(pathname: string): Lang {
   const first = pathname.split("/")[1];
-  return first === "en" ? "en" : "no";
+  return first === "en" ? "en" : "nl";
 }
 
 function withLang(lang: Lang, path: string) {
