@@ -135,12 +135,12 @@ export default function GitHubRepoCard({
     <Card className="border-0 shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
       <CardContent className="p-6">
         <div className="flex items-start gap-4">
-          <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-            <Github className="w-6 h-6 text-[#5A23C9]" />
+          <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+            <Github className="w-6 h-6 text-[#134074]" />
           </div>
 
           <div className="min-w-0">
-            <h3 className="text-lg font-bold text-[#3D148A] mb-1">
+            <h3 className="text-lg font-bold text-[#0B2545] mb-1">
               {labels.title}
             </h3>
 
@@ -150,7 +150,7 @@ export default function GitHubRepoCard({
 
             <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-600 mb-3">
               <span className="inline-flex items-center gap-1">
-                <Star className="w-4 h-4 text-[#5A23C9]" />
+                <Star className="w-4 h-4 text-[#134074]" />
                 {status === "ready"
                   ? compact(data!.stargazers_count, locale)
                   : "—"}{" "}
@@ -158,7 +158,7 @@ export default function GitHubRepoCard({
               </span>
 
               <span className="inline-flex items-center gap-1">
-                <GitFork className="w-4 h-4 text-[#5A23C9]" />
+                <GitFork className="w-4 h-4 text-[#134074]" />
                 {status === "ready"
                   ? compact(data!.forks_count, locale)
                   : "—"}{" "}
@@ -166,19 +166,19 @@ export default function GitHubRepoCard({
               </span>
 
               <span className="inline-flex items-center gap-1">
-                <Code className="w-4 h-4 text-[#5A23C9]" />
+                <Code className="w-4 h-4 text-[#134074]" />
                 {status === "ready" ? data!.language ?? "—" : "—"}
               </span>
 
               <span className="inline-flex items-center gap-1">
-                <Scale className="w-4 h-4 text-[#5A23C9]" />
+                <Scale className="w-4 h-4 text-[#134074]" />
                 {status === "ready"
                   ? data!.license?.spdx_id || labels.noLicense
                   : "—"}
               </span>
 
               <span className="inline-flex items-center gap-1">
-                <Clock className="w-4 h-4 text-[#5A23C9]" />
+                <Clock className="w-4 h-4 text-[#134074]" />
                 {status === "ready"
                   ? `${labels.updated} ${formatDate(
                       data!.updated_at,

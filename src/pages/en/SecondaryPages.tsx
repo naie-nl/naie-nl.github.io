@@ -78,11 +78,11 @@ export function Resources() {
               >
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <res.icon className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <res.icon className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-[#3D148A] mb-1">
+                      <h3 className="text-lg font-bold text-[#0B2545] mb-1">
                         {res.title}
                       </h3>
                       <p className="text-gray-600 text-sm leading-relaxed mb-3">
@@ -146,13 +146,13 @@ export function News() {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="shrink-0">
-                      <Newspaper className="w-5 h-5 text-[#5A23C9] mt-1" />
+                      <Newspaper className="w-5 h-5 text-[#134074] mt-1" />
                     </div>
                     <div>
                       <span className="text-xs font-semibold text-[#FF7A1A] uppercase tracking-wider">
                         {item.date}
                       </span>
-                      <h3 className="text-lg font-bold text-[#3D148A] mt-1">
+                      <h3 className="text-lg font-bold text-[#0B2545] mt-1">
                         {item.title}
                       </h3>
                       <p className="text-gray-600 text-sm mt-2 leading-relaxed">
@@ -238,14 +238,14 @@ const pressItems = [
 				  <Card className="border-0 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer">
 					<CardContent className="p-6">
 					  <div className="flex items-start gap-4">
-						<div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0 group-hover:bg-[#E0D8FF] transition-colors">
-						  <item.icon className="w-6 h-6 text-[#5A23C9]" />
+						<div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0 group-hover:bg-[#E0D8FF] transition-colors">
+						  <item.icon className="w-6 h-6 text-[#134074]" />
 						</div>
 						<div>
 						  <span className="text-xs font-semibold text-[#FF7A1A] uppercase tracking-wider">
 							{item.type}
 						  </span>
-						  <h3 className="text-lg font-bold text-[#3D148A] mt-1 group-hover:text-[#5A23C9] transition-colors">
+						  <h3 className="text-lg font-bold text-[#0B2545] mt-1 group-hover:text-[#134074] transition-colors">
 							{item.title}
 						  </h3>
 						  <p className="text-gray-600 text-sm mt-2 leading-relaxed">
@@ -312,7 +312,7 @@ export function ForOrganisations() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-[#3D148A] mb-6">
+              <h2 className="text-3xl font-bold text-[#0B2545] mb-6">
                 What we offer
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
@@ -334,7 +334,7 @@ export function ForOrganisations() {
 
               <Card className="border-0 shadow-md mt-8">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-[#3D148A] mb-2">
+                  <h3 className="text-lg font-bold text-[#0B2545] mb-2">
                     Practical information
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -362,11 +362,11 @@ export function ForOrganisations() {
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-[#3D148A]/10 flex items-center justify-center shrink-0">
-                        <o.icon className="w-6 h-6 text-[#3D148A]" />
+                      <div className="w-12 h-12 rounded-lg bg-[#0B2545]/10 flex items-center justify-center shrink-0">
+                        <o.icon className="w-6 h-6 text-[#0B2545]" />
                       </div>
                       <div className="min-w-0">
-                        <h3 className="text-lg font-bold text-[#3D148A] mb-1">
+                        <h3 className="text-lg font-bold text-[#0B2545] mb-1">
                           {o.title}
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
@@ -404,7 +404,7 @@ export function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold text-[#3D148A] mb-6">
+              <h2 className="text-2xl font-bold text-[#0B2545] mb-6">
                 Contact information
               </h2>
 
@@ -419,12 +419,12 @@ export function Contact() {
                   { icon: Phone, label: "Org. no.", value: "42075283" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <item.icon className="w-5 h-5 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <item.icon className="w-5 h-5 text-[#134074]" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">{item.label}</p>
-                      <p className="font-medium text-[#3D148A] whitespace-pre-line">
+                      <p className="font-medium text-[#0B2545] whitespace-pre-line">
                         {item.value}
                       </p>
                     </div>
@@ -432,9 +432,9 @@ export function Contact() {
                 ))}
               </div>
 
-              <Card className="mt-8 border-0 shadow-md bg-[#ECE7FF]">
+              <Card className="mt-8 border-0 shadow-md bg-[#E0F2FE]">
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-[#3D148A] mb-2">
+                  <h3 className="font-bold text-[#0B2545] mb-2">
                     For organisations
                   </h3>
                   <p className="text-gray-600 text-sm mb-3">
@@ -454,7 +454,7 @@ export function Contact() {
             <div>
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-[#3D148A] mb-6">
+                  <h2 className="text-2xl font-bold text-[#0B2545] mb-6">
                     Send us a message
                   </h2>
 
@@ -484,7 +484,7 @@ export function Contact() {
                         name="name"
                         type="text"
                         required
-                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
                         placeholder="Your name"
                       />
                     </div>
@@ -497,7 +497,7 @@ export function Contact() {
                         name="email"
                         type="email"
                         required
-                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
                         placeholder="you@email.com"
                       />
                     </div>
@@ -508,7 +508,7 @@ export function Contact() {
                       </label>
                       <select
                         name="topic"
-                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm bg-white"
+                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm bg-white"
                         defaultValue="General inquiry"
                       >
                         <option>General inquiry</option>
@@ -527,7 +527,7 @@ export function Contact() {
                         name="message"
                         rows={4}
                         required
-                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm resize-none"
+                        className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm resize-none"
                         placeholder="Write your message here..."
                       />
                     </div>
@@ -565,7 +565,7 @@ function PageWrapper({
       style={{ fontFamily: "Inter, sans-serif" }}
     >
       <Navigation />
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
           <p className="text-lg text-purple-200 max-w-2xl">{subtitle}</p>

@@ -10,7 +10,7 @@ export default function Privacy() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy</h1>
           <p className="text-lg text-purple-200 leading-relaxed">
@@ -25,14 +25,14 @@ export default function Privacy() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 text-gray-700 leading-relaxed">
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Who is the data controller?</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Who is the data controller?</h2>
             <p>
               The Norwegian AI Ethics Association (NAIE) is the data controller for personal data collected through our website and in connection with membership.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">What information do we collect?</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">What information do we collect?</h2>
             <p>
               In connection with membership and contact, we may process the following information:
             </p>
@@ -49,7 +49,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Purpose of processing</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Purpose of processing</h2>
             <p>
               The information is used solely for:
             </p>
@@ -61,7 +61,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Storage and security</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Storage and security</h2>
             <p>
               NAIE uses external service providers for the secure storage of membership data.
               Processing is carried out in accordance with applicable data protection regulations.
@@ -72,7 +72,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Retention period</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Retention period</h2>
             <p>
               Information about active members is stored as long as the membership remains active.
               Information about former members is normally deleted within 12 months after membership has ended,
@@ -81,7 +81,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Your rights</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Your rights</h2>
             <p>
               You have the right to access the information we have stored about you and may request correction or deletion.
               Requests can be submitted via our contact page.

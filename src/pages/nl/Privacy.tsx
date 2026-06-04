@@ -10,7 +10,7 @@ export default function Privacy() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy</h1>
           <p className="text-lg text-purple-200 leading-relaxed">
@@ -25,14 +25,14 @@ export default function Privacy() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 text-gray-700 leading-relaxed">
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Wie is de verwerkingsverantwoordelijke?</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Wie is de verwerkingsverantwoordelijke?</h2>
             <p>
               Norsk AI-Etikkforening (NAIE) is de verwerkingsverantwoordelijke voor de persoonsgegevens die worden verzameld via onze website en in het kader van het deelnemerschap.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Welke gegevens verzamelen we?</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Welke gegevens verzamelen we?</h2>
             <p>
               In het kader van het deelnemerschap en contact kunnen wij de volgende gegevens verwerken:
             </p>
@@ -49,7 +49,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Doel van de verwerking</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Doel van de verwerking</h2>
             <p>
               De gegevens worden uitsluitend gebruikt voor:
             </p>
@@ -61,7 +61,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Opslag en beveiliging</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Opslag en beveiliging</h2>
             <p>
               NAIE maakt gebruik van externe dienstverleners voor de veilige opslag van deelnemersgegevens.
               De verwerking vindt plaats in overeenstemming met de geldende privacywetgeving.
@@ -72,7 +72,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Bewaartermijn</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Bewaartermijn</h2>
             <p>
               Gegevens van actieve deelnemers worden bewaard zolang het deelnemerschap actief is.
               Gegevens van voormalige deelnemers worden normaal gesproken binnen 12 maanden na beëindiging van het deelnemerschap verwijderd,
@@ -81,7 +81,7 @@ export default function Privacy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D148A] mb-3">Uw rechten</h2>
+            <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Uw rechten</h2>
             <p>
               U heeft recht op inzage in de gegevens die wij over u hebben opgeslagen, en u kunt verzoeken om correctie of verwijdering.
               Verzoeken kunnen aan ons worden gericht via de contactpagina.

@@ -12,7 +12,7 @@ export default function Medlemskap() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Deelnemerschap</h1>
@@ -33,19 +33,19 @@ export default function Medlemskap() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <Users className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <Users className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#3D148A] mb-2">Hoe werkt het deelnemerschap?</h2>
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Hoe werkt het deelnemerschap?</h2>
                       <div className="space-y-3 text-gray-600 leading-relaxed">
                         <p>
-                          Alle deelnemers starten als <span className="font-medium text-[#3D148A]">steundeelnemer</span>.
+                          Alle deelnemers starten als <span className="font-medium text-[#0B2545]">steundeelnemer</span>.
                           Als steundeelnemer ondersteunt u de doelstellingen van NAIE en kunt u ons werk volgen, deelnemen aan activiteiten en bijdragen op de manier die u wilt.
                         </p>
                         <p>
                           Na een periode van actieve deelname (meestal 6-12 maanden) kunnen steundeelnemers een aanvraag indienen om
-                          <span className="font-medium text-[#3D148A]"> stemgerechtigd deelnemer</span> te worden.
+                          <span className="font-medium text-[#0B2545]"> stemgerechtigd deelnemer</span> te worden.
                           Stemgerechtigde deelnemers hebben formeel stemrecht op de jaarvergadering en kunnen worden gekozen in het bestuur of andere vertrouwensposities.
                         </p>
                         <p>
@@ -61,11 +61,11 @@ export default function Medlemskap() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <CheckCircle2 className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <CheckCircle2 className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#3D148A] mb-2">Wat wordt beschouwd als actieve deelname?</h2>
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Wat wordt beschouwd als actieve deelname?</h2>
                       <p className="text-gray-600 leading-relaxed">
                         Actieve deelname gaat over hoe u bijdraagt aan het werk en de doelen van de stichting. Dit kan bijvoorbeeld door:
                       </p>
@@ -93,11 +93,11 @@ export default function Medlemskap() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <Shield className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <Shield className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#3D148A] mb-2">Privacy en verwerking van deelnemersgegevens</h2>
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Privacy en verwerking van deelnemersgegevens</h2>
                       <p className="text-gray-600 leading-relaxed">
                         NAIE verwerkt persoonsgegevens in het kader van het deelnemerschap. De gegevens worden uitsluitend gebruikt voor de administratie van het deelnemerschap, communicatie en de beoordeling van de deelnemersstatus.
                         We slaan alleen noodzakelijke informatie op, zoals naam, e-mailadres, eventuele organisatie-affiliatie (indien opgegeven) en de categorie van deelnemerschap.
@@ -113,7 +113,7 @@ export default function Medlemskap() {
                 <Button asChild variant="outline" className="rounded-lg">
                   <Link to="/over-ons">Lees meer over NAIE</Link>
                 </Button>
-                <Button asChild className="bg-[#5A23C9] hover:bg-[#3D148A] text-white font-semibold rounded-lg">
+                <Button asChild className="bg-[#134074] hover:bg-[#0B2545] text-white font-semibold rounded-lg">
                   <Link to="/kontakt">
                     Vragen? Neem contact op <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
@@ -125,7 +125,7 @@ export default function Medlemskap() {
             <div>
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-[#3D148A] mb-2">Deelnemerschap aanvragen</h2>
+                  <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Deelnemerschap aanvragen</h2>
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
                     Vul het onderstaande formulier in om steundeelnemer te worden. Als u actief wilt bijdragen, kunt u hierover iets schrijven in het veld voor uw motivatie.
                   </p>
@@ -133,9 +133,9 @@ export default function Medlemskap() {
                 </CardContent>
               </Card>
 
-              <Card className="mt-6 border-0 shadow-md bg-[#ECE7FF]">
+              <Card className="mt-6 border-0 shadow-md bg-[#E0F2FE]">
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-[#3D148A] mb-2">Let op</h3>
+                  <h3 className="font-bold text-[#0B2545] mb-2">Let op</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     We gebruiken twee categorieën deelnemerschap om onderscheid te maken tussen ondersteuning en formele verantwoordelijkheid.
                     Het steundeelnemerschap is voor iedereen die mee wil doen. Stemgerechtigdheid is voor degenen die op de langere termijn een formelere verantwoordelijkheid binnen de stichting willen dragen.

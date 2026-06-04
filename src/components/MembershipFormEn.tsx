@@ -22,7 +22,7 @@ export default function MembershipFormEn() {
           name="name"
           type="text"
           required
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
           placeholder="Your name"
         />
       </div>
@@ -33,7 +33,7 @@ export default function MembershipFormEn() {
           name="email"
           type="email"
           required
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
           placeholder="you@example.com"
         />
       </div>
@@ -45,7 +45,7 @@ export default function MembershipFormEn() {
         <input
           name="affiliation"
           type="text"
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
           placeholder="E.g. public sector, academia, private sector"
         />
       </div>
@@ -56,7 +56,7 @@ export default function MembershipFormEn() {
         </label>
         <select
           name="intent"
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm bg-white"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm bg-white"
           defaultValue="Support"
           required
         >
@@ -73,7 +73,7 @@ export default function MembershipFormEn() {
         <textarea
           name="message"
           rows={4}
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm resize-none"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm resize-none"
           placeholder="What motivates you to become a member, and how would you like to contribute?"
         />
       </div>

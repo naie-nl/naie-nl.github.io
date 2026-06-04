@@ -15,7 +15,7 @@ export default function Membership() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Membership</h1>
@@ -36,22 +36,22 @@ export default function Membership() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <Users className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <Users className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#3D148A] mb-2">
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">
                         How does membership work?
                       </h2>
                       <div className="space-y-3 text-gray-600 leading-relaxed">
                         <p>
                           All members begin as{" "}
-                          <span className="font-medium text-[#3D148A]">supporting members</span>.
+                          <span className="font-medium text-[#0B2545]">supporting members</span>.
                           As a supporting member, you support NAIE’s purpose and may follow our work, take part in activities, and contribute in the way that suits you.
                         </p>
                         <p>
                           After a period of active engagement (typically 6–12 months), supporting members may apply to become{" "}
-                          <span className="font-medium text-[#3D148A]">voting members</span>.
+                          <span className="font-medium text-[#0B2545]">voting members</span>.
                           Voting members have formal voting rights at the annual meeting and may be elected to the board or other positions of trust.
                         </p>
                         <p>
@@ -67,11 +67,11 @@ export default function Membership() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <CheckCircle2 className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <CheckCircle2 className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#3D148A] mb-2">
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">
                         What counts as active engagement?
                       </h2>
                       <p className="text-gray-600 leading-relaxed">
@@ -101,11 +101,11 @@ export default function Membership() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <Shield className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <Shield className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#3D148A] mb-2">Privacy</h2>
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Privacy</h2>
                       <p className="text-gray-600 leading-relaxed">
                         The information you submit is used solely for membership administration and membership-related contact.
                         We do not publish member information without consent.
@@ -121,7 +121,7 @@ export default function Membership() {
                 </Button>
                 <Button
                   asChild
-                  className="bg-[#5A23C9] hover:bg-[#3D148A] text-white font-semibold rounded-lg"
+                  className="bg-[#134074] hover:bg-[#0B2545] text-white font-semibold rounded-lg"
                 >
                   <Link to="/en/contact">
                     Questions? Get in touch <ArrowRight className="ml-2 w-4 h-4" />
@@ -134,7 +134,7 @@ export default function Membership() {
             <div>
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-[#3D148A] mb-2">
+                  <h2 className="text-2xl font-bold text-[#0B2545] mb-2">
                     Apply for membership
                   </h2>
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -144,9 +144,9 @@ export default function Membership() {
                 </CardContent>
               </Card>
 
-              <Card className="mt-6 border-0 shadow-md bg-[#ECE7FF]">
+              <Card className="mt-6 border-0 shadow-md bg-[#E0F2FE]">
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-[#3D148A] mb-2">Note</h3>
+                  <h3 className="font-bold text-[#0B2545] mb-2">Note</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     We use two membership categories to distinguish between support and formal responsibility.
                     Supporting membership is for anyone who wishes to be part of NAIE. Voting membership is for those who, over time,

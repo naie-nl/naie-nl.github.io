@@ -13,7 +13,7 @@ const activities = {
   bias: {
     title: "Bias",
     icon: BarChart3,
-    color: "#5A23C9",
+    color: "#134074",
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
     intro: "NAIE investigates and measures bias in AI systems through systematic testing and benchmarking.",
     sections: [
@@ -116,11 +116,11 @@ export default function Activities() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="absolute inset-0 opacity-15">
           <img src={act.image} alt={act.title} className="w-full h-full object-cover" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3D148A]/90 to-[#3D148A]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B2545]/90 to-[#0B2545]/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button asChild variant="ghost" className="text-purple-200 hover:text-white !bg-transparent mb-4 -ml-3">
             <Link to="/en/activities">
@@ -143,7 +143,7 @@ export default function Activities() {
           {act.sections.map((section, i) => (
             <Card key={i} className="border-0 shadow-md">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#3D148A] mb-4">{section.title}</h2>
+                <h2 className="text-2xl font-bold text-[#0B2545] mb-4">{section.title}</h2>
                 {section.content && (
                   <p className="text-gray-600 leading-relaxed">{section.content}</p>
                 )}
@@ -166,7 +166,7 @@ export default function Activities() {
       {/* CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-[#3D148A] mb-4">Explore our results</h2>
+          <h2 className="text-2xl font-bold text-[#0B2545] mb-4">Explore our results</h2>
           <p className="text-gray-600 mb-6">See what we have found through our research and analysis.</p>
           <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">
             <Link to="/en/results">
@@ -188,7 +188,7 @@ function OverviewPage() {
     <div className="min-h-screen bg-[#F6F6F6]" style={{ fontFamily: "Inter, sans-serif" }}>
       <Navigation />
 
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{activities.overview.title}</h1>
           <p className="text-lg text-purple-200 max-w-2xl">{activities.overview.subtitle}</p>

@@ -22,7 +22,7 @@ export default function MembershipForm() {
           name="name"
           type="text"
           required
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
           placeholder="Ditt navn"
         />
       </div>
@@ -33,7 +33,7 @@ export default function MembershipForm() {
           name="email"
           type="email"
           required
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
           placeholder="din@epost.no"
         />
       </div>
@@ -45,7 +45,7 @@ export default function MembershipForm() {
         <input
           name="affiliation"
           type="text"
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
           placeholder="F.eks. offentlig sektor, akademia, privat næringsliv"
         />
       </div>
@@ -56,7 +56,7 @@ export default function MembershipForm() {
         </label>
         <select
           name="intent"
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm bg-white"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm bg-white"
           defaultValue="Støtte"
           required
         >
@@ -71,7 +71,7 @@ export default function MembershipForm() {
         <textarea
           name="message"
           rows={4}
-          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5A23C9]/30 focus:border-[#5A23C9] transition-colors text-sm resize-none"
+          className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm resize-none"
           placeholder="Hva motiverer deg til å bli medlem, og hvordan ønsker du eventuelt å bidra?"
         />
       </div>

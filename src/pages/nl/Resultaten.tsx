@@ -41,7 +41,7 @@ function clamp(n: number, min: number, max: number) {
 
 function GroupedVerticalBarChart() {
   const series = [
-    { key: "gpt4o", label: "ChatGPT-4o", color: "#5A23C9" },
+    { key: "gpt4o", label: "ChatGPT-4o", color: "#134074" },
     { key: "gemini25", label: "Gemini 2.5", color: "#FF7A1A" },
     { key: "perplexity", label: "Perplexity", color: "#0B0B0F" },
   ] as const;
@@ -279,7 +279,7 @@ function GroupedVerticalBarChart() {
                       y={margin.top}
                       width={groupW - 12}
                       height={plotH}
-                      fill="#5A23C9"
+                      fill="#134074"
                       opacity="0.06"
                       rx="8"
                     />
@@ -367,7 +367,7 @@ const keyFindings = [
     title: "1200+ antwoorden geanalyseerd",
     description:
       "Meer dan 1200 AI-gegenereerde antwoorden zijn systematisch geanalyseerd op bias en scheve verhoudingen via de NoBBQ-benchmark.",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     icon: AlertTriangle,
@@ -404,7 +404,7 @@ export default function Resultater() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Resultaten</h1>
           <p className="text-lg text-purple-200 max-w-2xl">
@@ -416,7 +416,7 @@ export default function Resultater() {
       {/* Key Findings */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#3D148A] mb-10 text-center">Belangrijkste bevindingen</h2>
+          <h2 className="text-3xl font-bold text-[#0B2545] mb-10 text-center">Belangrijkste bevindingen</h2>
 
           {/* Chart first, like on naie.no */}
           <GroupedVerticalBarChart />
@@ -432,7 +432,7 @@ export default function Resultater() {
                     <finding.icon className="w-6 h-6" style={{ color: finding.color }} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#3D148A] mb-1">{finding.title}</h3>
+                    <h3 className="text-lg font-bold text-[#0B2545] mb-1">{finding.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">{finding.description}</p>
                   </div>
                 </CardContent>
@@ -447,7 +447,7 @@ export default function Resultater() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-[#3D148A] mb-6">NoBBQ Benchmark</h2>
+              <h2 className="text-3xl font-bold text-[#0B2545] mb-6">NoBBQ Benchmark</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   NoBBQ (Norwegian Bias Benchmark for Question-answering) is een tool ontwikkeld door NAIE om op systematische
@@ -470,14 +470,14 @@ export default function Resultater() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#3D148A] mb-4">Geteste categorieën</h3>
+              <h3 className="text-xl font-bold text-[#0B2545] mb-4">Geteste categorieën</h3>
               <div className="space-y-3">
                 {testedCategories.map((cat) => (
                   <Card key={cat.category} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                     <CardContent className="p-4 flex items-center gap-3">
                       <div className="w-2 h-2 bg-[#FF7A1A] rounded-full shrink-0" />
                       <div>
-                        <span className="font-semibold text-[#3D148A] text-sm">{cat.category}</span>
+                        <span className="font-semibold text-[#0B2545] text-sm">{cat.category}</span>
                         <span className="text-gray-500 text-sm ml-2">— {cat.description}</span>
                       </div>
                     </CardContent>
@@ -492,7 +492,7 @@ export default function Resultater() {
       {/* CTA */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Card className="border-0 shadow-lg bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white">
+          <Card className="border-0 shadow-lg bg-gradient-to-br from-[#0B2545] to-[#134074] text-white">
             <CardContent className="p-10">
               <h2 className="text-2xl font-bold mb-3">Wilt u onze resultaten gebruiken?</h2>
               <p className="text-purple-200 mb-6">Neem contact met ons op om te ontdekken hoe onze bevindingen uw organisatie kunnen helpen.</p>

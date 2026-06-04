@@ -42,7 +42,7 @@ export default function OmOss() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Over ons</h1>
@@ -58,7 +58,7 @@ export default function OmOss() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#3D148A] mb-6">Onze missie</h2>
+              <h2 className="text-3xl font-bold text-[#0B2545] mb-6">Onze missie</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   NAIE is opgericht met de visie om AI eerlijker, transparanter en duurzamer te maken.
@@ -94,11 +94,11 @@ export default function OmOss() {
               ].map((item) => (
                 <Card key={item.title} className="border-0 shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#ECE7FF] rounded-lg flex items-center justify-center shrink-0">
-                      <item.icon className="w-6 h-6 text-[#5A23C9]" />
+                    <div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0">
+                      <item.icon className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#3D148A] mb-1">{item.title}</h3>
+                      <h3 className="font-bold text-[#0B2545] mb-1">{item.title}</h3>
                       <p className="text-gray-600 text-sm">{item.desc}</p>
                     </div>
                   </CardContent>
@@ -113,7 +113,7 @@ export default function OmOss() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#3D148A] mb-4">Het Bestuur</h2>
+            <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Het Bestuur</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Het bestuur van NAIE bestaat uit gedreven professionals met expertise op het gebied van AI, ethiek en technologie.
             </p>
@@ -146,7 +146,7 @@ export default function OmOss() {
                         />
                       </div>
 
-                      <h3 className="text-lg font-bold text-[#3D148A]">
+                      <h3 className="text-lg font-bold text-[#0B2545]">
                         {member.name}
                       </h3>
 
@@ -160,8 +160,8 @@ export default function OmOss() {
 
                       {/* Bottom aligned LinkedIn icon */}
                       <div className="mt-auto pt-6 flex justify-center">
-                        <div className="w-9 h-9 rounded-full bg-[#ECE7FF] flex items-center justify-center transition-colors group-hover:bg-[#E0D8FF]">
-                          <Linkedin className="w-4 h-4 text-[#5A23C9]" />
+                        <div className="w-9 h-9 rounded-full bg-[#E0F2FE] flex items-center justify-center transition-colors group-hover:bg-[#E0D8FF]">
+                          <Linkedin className="w-4 h-4 text-[#134074]" />
                         </div>
                       </div>
                     </CardContent>
@@ -180,7 +180,7 @@ export default function OmOss() {
             <CardContent className="p-10 md:p-14">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#3D148A] mb-4">Deelnemerschap</h2>
+                  <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Deelnemerschap</h2>
                   <p className="text-gray-600 leading-relaxed">
                     NAIE is een stichting die rust op de inzet van haar deelnemers. Alle deelnemers starten als steundeelnemer, en na verloop van tijd kunnen deelnemers die actiever willen bijdragen
                     stemrecht krijgen door actieve participatie. We zijn transparant over hoe dit in zijn werk gaat.
@@ -207,7 +207,7 @@ export default function OmOss() {
       {/* Organization Info */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="border-0 shadow-lg bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white">
+          <Card className="border-0 shadow-lg bg-gradient-to-br from-[#0B2545] to-[#134074] text-white">
             <CardContent className="p-10 md:p-14">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>

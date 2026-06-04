@@ -24,7 +24,7 @@ function PageWrapper({
       <main className="pt-24">
         <section className="py-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-extrabold text-[#3D148A]">{title}</h1>
+            <h1 className="text-4xl font-extrabold text-[#0B2545]">{title}</h1>
             {subtitle && <p className="mt-3 text-gray-600 max-w-3xl">{subtitle}</p>}
           </div>
         </section>
@@ -49,12 +49,12 @@ export function Blog() {
                 <Card key={post.slug} className="border-0 shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <FileText className="w-5 h-5 text-[#5A23C9] mt-1 shrink-0" />
+                      <FileText className="w-5 h-5 text-[#134074] mt-1 shrink-0" />
                       <div className="min-w-0">
                         <span className="text-xs font-semibold text-[#FF7A1A] uppercase tracking-wider">
                           {post.date}
                         </span>
-                        <h3 className="text-lg font-bold text-[#3D148A] mt-1">{post.title}</h3>
+                        <h3 className="text-lg font-bold text-[#0B2545] mt-1">{post.title}</h3>
                         <p className="text-gray-600 text-sm mt-2 leading-relaxed">{post.excerpt}</p>
 
                         {"externalUrl" in post && post.externalUrl ? (
@@ -124,7 +124,7 @@ export function BlogPost() {
     <PageWrapper title={meta.title} subtitle={meta.date}>
       <section className="pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <article className="prose prose-slate max-w-none prose-h1:text-[#3D148A] prose-h2:text-[#3D148A] prose-a:text-[#FF7A1A] prose-a:no-underline hover:prose-a:underline">
+          <article className="prose prose-slate max-w-none prose-h1:text-[#0B2545] prose-h2:text-[#0B2545] prose-a:text-[#FF7A1A] prose-a:no-underline hover:prose-a:underline">
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
               {md}
             </ReactMarkdown>

@@ -228,7 +228,7 @@ export default function Navigation() {
                     className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                       isChildActive(item.children)
                         ? "text-[#FF7A1A] bg-[#FF7A1A]/10"
-                        : "text-gray-700 hover:text-[#5A23C9] hover:bg-[#ECE7FF]"
+                        : "text-gray-700 hover:text-[#134074] hover:bg-[#E0F2FE]"
                     }`}
                   >
                     {item.label}
@@ -244,7 +244,7 @@ export default function Navigation() {
                           className={`block px-4 py-2 text-sm transition-colors ${
                             isActive(child.path)
                               ? "text-[#FF7A1A] bg-[#FF7A1A]/5"
-                              : "text-gray-700 hover:text-[#5A23C9] hover:bg-[#ECE7FF]"
+                              : "text-gray-700 hover:text-[#134074] hover:bg-[#E0F2FE]"
                           }`}
                         >
                           {child.label}
@@ -260,7 +260,7 @@ export default function Navigation() {
                   className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                     isActive(item.path)
                       ? "text-[#FF7A1A] bg-[#FF7A1A]/10"
-                      : "text-gray-700 hover:text-[#5A23C9] hover:bg-[#ECE7FF]"
+                      : "text-gray-700 hover:text-[#134074] hover:bg-[#E0F2FE]"
                   }`}
                 >
                   {item.label}
@@ -277,7 +277,7 @@ export default function Navigation() {
                 onClick={() => switchLang("nl")}
                 className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
                   lang === "nl"
-                    ? "bg-white text-[#3D148A] shadow-sm"
+                    ? "bg-white text-[#0B2545] shadow-sm"
                     : "text-gray-500 hover:text-gray-700"
                 }`}
               >
@@ -288,7 +288,7 @@ export default function Navigation() {
                 onClick={() => switchLang("en")}
                 className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
                   lang === "en"
-                    ? "bg-white text-[#3D148A] shadow-sm"
+                    ? "bg-white text-[#0B2545] shadow-sm"
                     : "text-gray-500 hover:text-gray-700"
                 }`}
               >
@@ -328,7 +328,7 @@ export default function Navigation() {
                         className={`block pl-6 pr-3 py-2 text-sm rounded-md transition-colors ${
                           isActive(child.path)
                             ? "text-[#FF7A1A] bg-[#FF7A1A]/5"
-                            : "text-gray-600 hover:text-[#5A23C9] hover:bg-[#ECE7FF]"
+                            : "text-gray-600 hover:text-[#134074] hover:bg-[#E0F2FE]"
                         }`}
                       >
                         {child.label}
@@ -342,7 +342,7 @@ export default function Navigation() {
                     className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                       isActive(item.path)
                         ? "text-[#FF7A1A] bg-[#FF7A1A]/10"
-                        : "text-gray-700 hover:text-[#5A23C9] hover:bg-[#ECE7FF]"
+                        : "text-gray-700 hover:text-[#134074] hover:bg-[#E0F2FE]"
                     }`}
                   >
                     {item.label}

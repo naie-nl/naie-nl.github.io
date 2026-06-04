@@ -18,37 +18,37 @@ const questions = [
     question: "Hoe weten we of een AI-systeem mensen van verschillende leeftijden, geslachten of nationaliteiten eerlijk behandelt?",
     context: "We analyseren of taalmodellen systematisch verschillende antwoorden geven op basis van beschermde of kwetsbare groepen in een Nederlandse context.",
     pillar: "Bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     question: "Als AI stilletjes bepaalde groepen uitsluit van vacatures, wie merkt dat op — en wie is er verantwoordelijk?",
     context: "We onderzoeken of geautomatiseerde aanbevelingen of beoordelingen leiden tot onbedoelde discriminatie.",
     pillar: "Bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     question: "Wat gebeurt er als AI-aanbevelingen in de zorg of welzijn gebaseerd zijn op vertekende historische data?",
     context: "Historische datasets kunnen systematische fouten bevatten. We testen hoe dit moderne AI-systemen beïnvloedt.",
     pillar: "Bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     question: "Hoe voorkomen we dat AI stereotype opvattingen versterkt in plaats van ze uit te dagen?",
     context: "We analyseren of AI gevestigde stereotypen herhaalt of versterkt in taal en besluitvormingsondersteuning.",
     pillar: "Bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     question: "Als een AI-systeem Nederlandse mensen, cultuur of identiteit verkeerd weergeeft — wie corrigeert dat?",
     context: "We onderzoeken hoe wereldwijde modellen omgaan met de Nederlandse taal, cultuur en maatschappelijke verhoudingen.",
     pillar: "Bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     question: "Hoe kunnen we ervoor zorgen dat AI minderheden of kwetsbare groepen niet over het hoofd ziet?",
     context: "We testen of modellen bepaalde maatschappelijke groepen systematisch ondervertegenwoordigen of verkeerd interpreteren.",
     pillar: "Bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     question: "Zou u vertrouwen op een beslissing die uw leven beïnvloedt als u niet begrijpt hoe het algoritme daartoe is gekomen?",
@@ -135,7 +135,7 @@ export default function HomePage() {
       icon: BarChart3,
       image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
       path: `/${lang}/activiteiten/bias`, // 🔄 Dynamic layout link string context
-      color: "#5A23C9",
+      color: "#134074",
     },
     {
       title: "Verantwoorde AI",
@@ -173,7 +173,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#3D148A] via-[#3D148A] to-[#5A23C9] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0B2545] via-[#0B2545] to-[#134074] text-white">
         <div className="absolute inset-0 opacity-15">
           <img
             src="https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/ad1ba338-c564-4323-8d62-62e122d7bb05.png"
@@ -181,7 +181,7 @@ export default function HomePage() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3D148A]/90 to-[#3D148A]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B2545]/90 to-[#0B2545]/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
@@ -222,7 +222,7 @@ export default function HomePage() {
               <Card key={i} className="bg-white shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6 text-center">
                   <stat.icon className="w-6 h-6 text-[#FF7A1A] mx-auto mb-2" />
-                  <p className="text-2xl md:text-3xl font-bold text-[#3D148A]">{stat.value}</p>
+                  <p className="text-2xl md:text-3xl font-bold text-[#0B2545]">{stat.value}</p>
                   <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
                 </CardContent>
               </Card>
@@ -235,11 +235,11 @@ export default function HomePage() {
       <section className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[#ECE7FF] rounded-full px-4 py-1.5 mb-4">
-              <HelpCircle className="w-4 h-4 text-[#5A23C9]" />
-              <span className="text-sm font-medium text-[#5A23C9]">Waarom NAIE bestaat</span>
+            <div className="inline-flex items-center gap-2 bg-[#E0F2FE] rounded-full px-4 py-1.5 mb-4">
+              <HelpCircle className="w-4 h-4 text-[#134074]" />
+              <span className="text-sm font-medium text-[#134074]">Waarom NAIE bestaat</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">
               Vragen die om antwoorden vragen
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -261,7 +261,7 @@ export default function HomePage() {
                       {q.pillar}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#0A0A0A] mb-3 leading-snug group-hover:text-[#3D148A] transition-colors">
+                  <h3 className="text-lg font-bold text-[#0A0A0A] mb-3 leading-snug group-hover:text-[#0B2545] transition-colors">
                     {q.question}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{q.context}</p>
@@ -270,7 +270,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button asChild size="lg" className="bg-[#5A23C9] hover:bg-[#3D148A] text-white font-semibold rounded-lg">
+            <Button asChild size="lg" className="bg-[#134074] hover:bg-[#0B2545] text-white font-semibold rounded-lg">
               <Link to={`/${lang}/resultaten`}> {/* 🔄 Updated with template string dynamic language route context */}
                 Bekijk wat we hebben gevonden <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
@@ -283,7 +283,7 @@ export default function HomePage() {
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">Wat doet NAIE?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">Wat doet NAIE?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               We werken met drie hoofdpeilers om ethisch en verantwoord gebruik van kunstmatige intelligentie in Nederland te stimuleren.
             </p>
@@ -325,13 +325,13 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">Mijlpalen</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">Mijlpalen</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Onze reis naar meer ethische en verantwoorde AI in Nederland.
             </p>
           </div>
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FF7A1A] to-[#5A23C9] hidden md:block" />
+            <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FF7A1A] to-[#134074] hidden md:block" />
             <div className="space-y-12">
               {milestones.map((milestone, i) => (
                 <div key={i} className={`flex flex-col md:flex-row items-center gap-6 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
@@ -339,7 +339,7 @@ export default function HomePage() {
                     <Card className="inline-block border-0 shadow-md hover:shadow-lg transition-shadow">
                       <CardContent className="p-6">
                         <span className="text-sm font-semibold text-[#FF7A1A]">{milestone.year}</span>
-                        <h3 className="text-lg font-bold text-[#3D148A] mt-1">{milestone.title}</h3>
+                        <h3 className="text-lg font-bold text-[#0B2545] mt-1">{milestone.title}</h3>
                         <p className="text-gray-600 text-sm mt-2">{milestone.description}</p>
                       </CardContent>
                     </Card>
@@ -354,7 +354,7 @@ export default function HomePage() {
       </section>
 
 	  {/* CTA Section */}
-	  <section className="py-20 bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white">
+	  <section className="py-20 bg-gradient-to-br from-[#0B2545] to-[#134074] text-white">
 	    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 	  	<h2 className="text-3xl md:text-4xl font-bold mb-4">Wilt u meer weten?</h2>
 	  	<p className="text-purple-200 text-lg mb-8 max-w-2xl mx-auto">

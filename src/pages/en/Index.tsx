@@ -14,7 +14,7 @@ const pillars = [
     icon: BarChart3,
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
     path: "/en/activities/bias",
-    color: "#5A23C9",
+    color: "#134074",
   },
   {
     title: "Responsible AI",
@@ -48,37 +48,37 @@ const questions = [
   question: "How do we know whether an AI system treats people of different ages, genders, or nationalities fairly?",
   context: "We analyze whether language models provide systematically different answers based on protected or vulnerable groups in a Dutch context.",
   pillar: "Bias",
-  color: "#5A23C9",
+  color: "#134074",
 },
 {
   question: "If AI quietly excludes certain groups from job opportunities, who detects it — and who is responsible?",
   context: "We examine whether automated recommendations or evaluations lead to unintended discrimination.",
   pillar: "Bias",
-  color: "#5A23C9",
+  color: "#134074",
 },
 {
   question: "What happens when AI recommendations in healthcare or welfare are based on biased historical data?",
   context: "Historical datasets may contain systematic bias. We test how this affects modern AI systems.",
   pillar: "Bias",
-  color: "#5A23C9",
+  color: "#134074",
 },
 {
   question: "How do we prevent AI from reinforcing stereotypes instead of challenging them?",
   context: "We analyze whether AI repeats or amplifies established stereotypes in language and decision support.",
   pillar: "Bias",
-  color: "#5A23C9",
+  color: "#134074",
 },
 {
   question: "If an AI system misrepresents Dutch people, culture, or identity — who corrects it?",
   context: "We examine how global models handle Dutch language, culture, and social conditions.",
   pillar: "Bias",
-  color: "#5A23C9",
+  color: "#134074",
 },
 {
   question: "How can we ensure AI does not overlook minorities or vulnerable groups?",
   context: "We test whether models systematically underrepresent or misinterpret certain societal groups.",
   pillar: "Bias",
-  color: "#5A23C9",
+  color: "#134074",
 },
 {
   question: "Would you trust a decision that affects your life if you don’t understand how the algorithm reached it?",
@@ -169,7 +169,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#3D148A] via-[#3D148A] to-[#5A23C9] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0B2545] via-[#0B2545] to-[#134074] text-white">
         <div className="absolute inset-0 opacity-15">
           <img
             src="https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/ad1ba338-c564-4323-8d62-62e122d7bb05.png"
@@ -177,7 +177,7 @@ export default function HomePage() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3D148A]/90 to-[#3D148A]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B2545]/90 to-[#0B2545]/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
@@ -216,7 +216,7 @@ export default function HomePage() {
               <Card key={i} className="bg-white shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6 text-center">
                   <stat.icon className="w-6 h-6 text-[#FF7A1A] mx-auto mb-2" />
-                  <p className="text-2xl md:text-3xl font-bold text-[#3D148A]">{stat.value}</p>
+                  <p className="text-2xl md:text-3xl font-bold text-[#0B2545]">{stat.value}</p>
                   <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
                 </CardContent>
               </Card>
@@ -229,11 +229,11 @@ export default function HomePage() {
       <section className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[#ECE7FF] rounded-full px-4 py-1.5 mb-4">
-              <HelpCircle className="w-4 h-4 text-[#5A23C9]" />
-              <span className="text-sm font-medium text-[#5A23C9]">Why NAIE exists</span>
+            <div className="inline-flex items-center gap-2 bg-[#E0F2FE] rounded-full px-4 py-1.5 mb-4">
+              <HelpCircle className="w-4 h-4 text-[#134074]" />
+              <span className="text-sm font-medium text-[#134074]">Why NAIE exists</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">
               Questions that need answers
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -255,7 +255,7 @@ export default function HomePage() {
                       {q.pillar}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#0A0A0A] mb-3 leading-snug group-hover:text-[#3D148A] transition-colors">
+                  <h3 className="text-lg font-bold text-[#0A0A0A] mb-3 leading-snug group-hover:text-[#0B2545] transition-colors">
                     {q.question}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{q.context}</p>
@@ -264,7 +264,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button asChild size="lg" className="bg-[#5A23C9] hover:bg-[#3D148A] text-white font-semibold rounded-lg">
+            <Button asChild size="lg" className="bg-[#134074] hover:bg-[#0B2545] text-white font-semibold rounded-lg">
               <Link to="/en/results">
                 See what we’ve found <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
@@ -277,7 +277,7 @@ export default function HomePage() {
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">What does NAIE do?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">What does NAIE do?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               We work across three core pillars to promote ethical and responsible use of artificial intelligence in the Netherlands.
             </p>
@@ -319,13 +319,13 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3D148A] mb-4">Milestones</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">Milestones</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our journey toward more ethical and responsible AI in the Netherlands.
             </p>
           </div>
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FF7A1A] to-[#5A23C9] hidden md:block" />
+            <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FF7A1A] to-[#134074] hidden md:block" />
             <div className="space-y-12">
               {milestones.map((milestone, i) => (
                 <div key={i} className={`flex flex-col md:flex-row items-center gap-6 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
@@ -333,7 +333,7 @@ export default function HomePage() {
                     <Card className="inline-block border-0 shadow-md hover:shadow-lg transition-shadow">
                       <CardContent className="p-6">
                         <span className="text-sm font-semibold text-[#FF7A1A]">{milestone.year}</span>
-                        <h3 className="text-lg font-bold text-[#3D148A] mt-1">{milestone.title}</h3>
+                        <h3 className="text-lg font-bold text-[#0B2545] mt-1">{milestone.title}</h3>
                         <p className="text-gray-600 text-sm mt-2">{milestone.description}</p>
                       </CardContent>
                     </Card>
@@ -348,7 +348,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#3D148A] to-[#5A23C9] text-white">
+      <section className="py-20 bg-gradient-to-br from-[#0B2545] to-[#134074] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Want to learn more?</h2>
           <p className="text-purple-200 text-lg mb-8 max-w-2xl mx-auto">
