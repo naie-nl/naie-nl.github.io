@@ -149,7 +149,7 @@ const questions = [
 ];
 
 const milestones = [
-  { year: "June 2026", title: "NAIE Foundation registered", description: "On June 4th, 2026, The Dutch AI Ethics Foundation was registered in the Kamer van Koophandel." }
+  { year: "June 2026", title: "NAIE Foundation registered", description: "On June 4th, 2026, The Dutch Institute for AI Ethics (NAIE) was registered in the Kamer van Koophandel." }
 ];
 
 export default function HomePage() {
@@ -182,7 +182,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
               <div className="w-2 h-2 bg-[#FF7A1A] rounded-full animate-pulse" />
-              <span className="text-sm text-purple-200">Dutch AI Ethics Foundation</span>
+              <span className="text-sm text-purple-200">Dutch Institute for AI Ethics (NAIE)</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Ethical artificial{" "}

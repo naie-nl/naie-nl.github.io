@@ -7,32 +7,25 @@ import Footer from "@/components/Footer";
 
 const boardMembers = [
   {
+    name: "Jessica Balla - de Boer",
+    role: "Chair of the board",
+    description: "Projectmanager Location- and Area Development, Gemeente Hoorn.",
+    image: "jessica-balla-de-boer.jpg",
+    linkedin: "https://www.linkedin.com/in/jessica-balla-de-boer-7a731333/",
+  },
+  {
+    name: "Tjen de Clerck",
+    role: "Vice-chair",
+    description: "Senior Security Consultant, Tech Scorpions.",
+    image: "tjen-de-clerck.png",
+    linkedin: "https://www.linkedin.com/in/tjendeclerck/",
+  },
+  {
     name: "Wessel Braakman",
-    role: "Chair",
-    description: "Senior QA consultant, Bouvet.",
+    role: "Secretary/Treasurer",
+    description: "Senior QA Consultant, Bouvet.",
     image: "wessel-braakman.png",
     linkedin: "https://www.linkedin.com/in/wesselbraakman/",
-  },
-  {
-    name: "Alejandra Palacio Perez",
-    role: "Vice Chair",
-    description: "Agile coaching | product development | team leadership, Bouvet.",
-    image: "alejandra-palacio-perez.png",
-    linkedin: "https://www.linkedin.com/in/alejandra-palacio-perez-a398b912/",
-  },
-  {
-    name: "Teresa Dalen Herland",
-    role: "Board Member",
-    description: "Head of QA and Test, Rema1000.",
-    image: "teresa-dalen-herland.png",
-    linkedin: "https://www.linkedin.com/in/teresa-h-33499114/",
-  },
-  {
-    name: "Kathinka Theodore Aakenes Vik",
-    role: "Board Member",
-    description: "Jurist og fagansvarlig for KI, LDO.",
-    image: "kathinka-theodore-aakenes-vik.png",
-    linkedin: "https://www.linkedin.com/in/kathinka-theodore-aakenes-vik-b3060688/",
   },
 ];
 
@@ -50,9 +43,9 @@ export default function OmOss() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About us</h1>
             <p className="text-lg text-purple-200 leading-relaxed">
-              NAIE (Norwegian AI Ethics Association) is an independent,
+              NAIE (Dutch Institute for AI Ethics) is an independent,
               non-profit organisation working to promote the ethical and
-              responsible use of artificial intelligence in Norway.
+              responsible use of artificial intelligence in the Netherlands.
             </p>
           </div>
         </div>
@@ -77,8 +70,8 @@ export default function OmOss() {
                   technology.
                 </p>
                 <p>
-                  NAIE collaborates with the Equality and Anti-Discrimination
-                  Ombud (LDO) and other key stakeholders.
+                  NAIE collaborates with the Norwegian and Danish associations
+                  and other key stakeholders.
                 </p>
               </div>
             </div>
@@ -135,7 +128,7 @@ export default function OmOss() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-stretch">
             {boardMembers.map((member) => (
               <a
                 key={member.name}
@@ -189,14 +182,14 @@ export default function OmOss() {
                 <div>
                   <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Membership</h2>
                   <p className="text-gray-600 leading-relaxed">
-                    NAIE is a membership-based association. All members begin as supporting members, and over time those who wish to take on a more active role may obtain voting rights through sustained engagement. We are transparent about how this process works.
+                    NAIE is a foundation with partakers.
                   </p>
                 </div>
       
                 <div className="text-center md:text-right flex flex-col md:items-end gap-3">
                   <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">
                     <Link to="/en/membership">
-                      Learn more about membership <ArrowRight className="ml-2 w-4 h-4" />
+                      Learn more about partaking <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>
       
@@ -223,15 +216,15 @@ export default function OmOss() {
                   <ul className="space-y-3 text-purple-200">
                     <li>
                       <span className="text-white font-medium">Name:</span>{" "}
-                      Norwegian AI Ethics Association (NAIE)
+                      Dutch Institute for AI Ethics (NAIE)
                     </li>
                     <li>
                       <span className="text-white font-medium">Type:</span>{" "}
                       Independent, non-profit organisation
                     </li>
                     <li>
-                      <span className="text-white font-medium">Org. no.:</span>{" "}
-                      932 552 728
+                      <span className="text-white font-medium">KvK. no.:</span>{" "}
+                      42075283
                     </li>
                     <li>
                       <span className="text-white font-medium">License:</span>{" "}

@@ -14,7 +14,7 @@ export default function Privacy() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy</h1>
           <p className="text-lg text-purple-200 leading-relaxed">
-            Norsk AI-Etikkforening (NAIE) verwerkt persoonsgegevens op een verantwoorde en transparante manier.
+            Stichting Nederlands AI-Ethiek Instituut (NAIE) verwerkt persoonsgegevens op een verantwoorde en transparante manier.
             Deze pagina beschrijft hoe wij omgaan met gegevens die gerelateerd zijn aan het deelnemerschap en contact.
           </p>
         </div>
@@ -27,7 +27,7 @@ export default function Privacy() {
           <div>
             <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Wie is de verwerkingsverantwoordelijke?</h2>
             <p>
-              Norsk AI-Etikkforening (NAIE) is de verwerkingsverantwoordelijke voor de persoonsgegevens die worden verzameld via onze website en in het kader van het deelnemerschap.
+              Stichting Nederlands AI-Ethiek Instituut (NAIE) is de verwerkingsverantwoordelijke voor de persoonsgegevens die worden verzameld via onze website en in het kader van het deelnemerschap.
             </p>
           </div>
 

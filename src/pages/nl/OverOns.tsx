@@ -7,32 +7,25 @@ import Footer from "@/components/Footer";
 
 const boardMembers = [
   {
-    name: "Wessel Braakman",
+    name: "Jessica Balla - de Boer",
     role: "Bestuursvoorzitter",
-    description: "Senior QA consultant, Bouvet.",
+    description: "Projectmanager Locatie- en Gebiedsontwikkeling, Gemeente Hoorn.",
+    image: "jessica-balla-de-boer.jpg",
+    linkedin: "https://www.linkedin.com/in/jessica-balla-de-boer-7a731333/",
+  },
+  {
+    name: "Tjen de Clerck",
+    role: "Vice-voorzitter",
+    description: "Senior Security Consultant, Tech Scorpions.",
+    image: "tjen-de-clerck.png",
+    linkedin: "https://www.linkedin.com/in/tjendeclerck/",
+  },
+  {
+    name: "Wessel Braakman",
+    role: "Secretaris penningmeester",
+    description: "Senior QA Consultant, Bouvet.",
     image: "wessel-braakman.png",
     linkedin: "https://www.linkedin.com/in/wesselbraakman/",
-  },
-  {
-    name: "Alejandra Palacio Perez",
-    role: "Vice-voorzitter",
-    description: "Agile coaching | productontwikkeling | teamleiderschap, Bouvet.",
-    image: "alejandra-palacio-perez.png",
-    linkedin: "https://www.linkedin.com/in/alejandra-palacio-perez-a398b912/",
-  },
-  {
-    name: "Teresa Dalen Herland",
-    role: "Bestuurslid",
-    description: "Head of QA and Test, Rema1000.",
-    image: "teresa-dalen-herland.png",
-    linkedin: "https://www.linkedin.com/in/teresa-h-33499114/",
-  },
-  {
-    name: "Kathinka Theodore Aakenes Vik",
-    role: "Bestuurslid",
-    description: "Jurist en vakspecialist voor AI, LDO.",
-    image: "kathinka-theodore-aakenes-vik.png",
-    linkedin: "https://www.linkedin.com/in/kathinka-theodore-aakenes-vik-b3060688/",
   },
 ];
 
@@ -47,7 +40,7 @@ export default function OmOss() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Over ons</h1>
             <p className="text-lg text-purple-200 leading-relaxed">
-              NAIE (Norsk AI-Etikkforening) is een onafhankelijke non-profitorganisatie die zich inzet voor ethisch en verantwoord gebruik van kunstmatige intelligentie in Noorwegen.
+              NAIE (Stichting Nederlands AI-Ethiek Instituut) is een onafhankelijke non-profitorganisatie die zich inzet voor ethisch en verantwoord gebruik van kunstmatige intelligentie in Nederland.
             </p>
           </div>
         </div>
@@ -68,7 +61,7 @@ export default function OmOss() {
                   Verantwoorde AI-ontwikkeling en Duurzaamheid in AI-technologie.
                 </p>
                 <p>
-                  NAIE werkt nauw samen met de Noorse Gelijkheid- en Anti-discriminatieombudsman (LDO)
+                  NAIE werkt nauw samen met de Noorse en Deense AI-Ethiek organisaties
                   en andere belangrijke spelers.
                 </p>
               </div>
@@ -119,7 +112,7 @@ export default function OmOss() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-stretch">
             {boardMembers.map((member) => {
               const Wrapper: any = member.linkedin ? "a" : "div";
               const wrapperProps = member.linkedin
@@ -213,7 +206,7 @@ export default function OmOss() {
                 <div>
                   <h2 className="text-3xl font-bold mb-4">Organisatiegegevens</h2>
                   <ul className="space-y-3 text-purple-200">
-                    <li><span className="text-white font-medium">Naam:</span> Norsk AI-Etikkforening (NAIE)</li>
+                    <li><span className="text-white font-medium">Naam:</span> Stichting Nederlands AI-Ethiek Instituut (NAIE)</li>
                     <li><span className="text-white font-medium">Type:</span> Onafhankelijke non-profitorganisatie</li>
                     <li><span className="text-white font-medium">KVK-nr (Org.nr):</span> 932 552 728</li>
                     <li><span className="text-white font-medium">Licentie:</span> CC BY 4.0</li>

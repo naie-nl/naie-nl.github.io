@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/naie_logo_v1_with_text_purple.svg";
+import logo from "@/assets/naie_nl_logo_v1_with_text.svg";
 
 // Import your content arrays to dynamically translate asymmetric article slugs
 import { BLOGS as BLOGS_NO } from "@/content/nl/blog";

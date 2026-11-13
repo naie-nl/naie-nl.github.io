@@ -30,19 +30,19 @@ export default function Footer() {
           contact: "Contact",
           organisations: "For organisations",
           copyright:
-            "Norwegian AI Ethics Association (NAIE). All rights reserved.",
+            "Dutch AI Ethics Foundation (NAIE). All rights reserved.",
         }
       : {
-          about: "Om NAIE",
-          activities: "Aktiviteter",
-          results: "Resultater",
-          blog: "Blogg",
-          resources: "Ressurser",
-          personsvern: "Personsvern",
-          contact: "Kontakt",
-          organisations: "For organisasjoner",
+          about: "Over NAIE",
+          activities: "Activiteiten",
+          results: "Resultaten",
+          blog: "Blog",
+          resources: "Resources",
+          personsvern: "Privacy",
+          contact: "Contact",
+          organisations: "Voor organisaties",
           copyright:
-            "Norsk AI-Etikkforening (NAIE). Alle rettigheter reservert.",
+            "Stichting Nederlands AI-Ethiek Instituut (NAIE). Alle rechten voorbehouden.",
         };
 
   return (

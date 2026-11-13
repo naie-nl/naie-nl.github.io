@@ -264,7 +264,7 @@ export function VoorOrganisaties() {
               <h2 className="text-3xl font-bold text-[#0B2545] mb-6">Wat wij bieden</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Norsk AI-Etikkforening (NAIE) is een non-profitorganisatie die zich inzet voor een beter begrip van vooroordelen (bias),
+                  Stichting Nederlands AI-Ethiek Instituut (NAIE) is een non-profitorganisatie die zich inzet voor een beter begrip van vooroordelen (bias),
                   ethiek en maatschappelijke effecten van kunstmatige intelligentie in een Noorse context.
                 </p>
                 <p>
