@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
-import { ArrowRight, BarChart3, Shield, Leaf, TrendingUp, Users, Award, HelpCircle } from "lucide-react";
+import { ArrowRight, BarChart3, Shield, Leaf, TrendingUp, Users, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -10,7 +10,7 @@ const pillars = [
   {
     title: "Bias",
     description:
-      "We examine and measure bias in AI systems. Through the NoBBQ benchmark, we test large language models for bias related to gender, ethnicity, religion, and other protected categories.",
+      "We are preparing NlBBQ to examine bias in language models in Dutch language and social context. Results will be published when available.",
     icon: BarChart3,
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
     path: "/en/activities/bias",
@@ -28,7 +28,7 @@ const pillars = [
   {
     title: "Sustainability",
     description:
-      "We investigate the environmental impact of AI systems and work toward more sustainable AI development. We measure and report energy usage and carbon footprint.",
+      "We investigate the environmental impact of AI systems and work toward more sustainable AI development. Our focus includes energy use, resource consumption, and transparency about environmental impact.",
     icon: Leaf,
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/5dbf5d3e-295f-427b-86d9-cfecd9b430b2.png",
     path: "/en/activities/sustainability",
@@ -38,9 +38,9 @@ const pillars = [
 
 const stats = [
   { value: "3", label: "Pillars", icon: TrendingUp },
-  { value: "1200+", label: "AI responses analyzed", icon: BarChart3 },
-  { value: "The first Dutch", label: "Bias indicator", icon: Award },
-  { value: "Collaboration", label: "with institutions", icon: Users },
+  { value: "NlBBQ", label: "In preparation", icon: BarChart3 },
+  { value: "Ethics", label: "Multidisciplinary perspectives", icon: Shield },
+  { value: "Together", label: "Contribute as a participant", icon: Users },
 ];
 
 const questions = [
@@ -191,7 +191,7 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-purple-200 leading-relaxed mb-8 max-w-2xl">
-              An independent, non-profit association delivering statistics and insights on Bias, Sustainability, and Responsible AI.
+              An independent, non-profit foundation working on bias, sustainability, and responsible AI.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg px-6">
@@ -266,7 +266,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Button asChild size="lg" className="bg-[#134074] hover:bg-[#0B2545] text-white font-semibold rounded-lg">
               <Link to="/en/results">
-                See what we’ve found <ArrowRight className="ml-2 w-4 h-4" />
+                Follow our research <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
           </div>
@@ -352,7 +352,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Want to learn more?</h2>
           <p className="text-purple-200 text-lg mb-8 max-w-2xl mx-auto">
-            Explore our results and resources, and learn more about how NAIE works toward ethical AI in the Netherlands.
+            Explore our areas of work and learn how you can contribute to ethical AI in the Netherlands.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">
@@ -360,7 +360,7 @@ export default function HomePage() {
             </Button>
 
 		    <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 !bg-transparent rounded-lg">
-		   	  <Link to="/en/membership">Learn more about membership</Link>
+		   	  <Link to="/en/membership">Learn more about participation</Link>
 		    </Button>
 
             <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 !bg-transparent rounded-lg">

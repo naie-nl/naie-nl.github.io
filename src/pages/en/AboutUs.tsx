@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const boardMembers = [
   {
     name: "Jessica Balla - de Boer",
-    role: "Chair of the board",
+    role: "Chair",
     description: "Projectmanager Location- and Area Development, Gemeente Hoorn.",
     image: "jessica-balla-de-boer.jpg",
     linkedin: "https://www.linkedin.com/in/jessica-balla-de-boer-7a731333/",
@@ -91,7 +91,7 @@ export default function OmOss() {
                 {
                   icon: Users,
                   title: "Community",
-                  desc: "We build a network of experts within AI ethics.",
+                  desc: "We bring together people from different backgrounds around the ethical and responsible use of AI.",
                 },
               ].map((item) => (
                 <Card
@@ -124,7 +124,7 @@ export default function OmOss() {
               Board
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              NAIE’s board consists of engaged professionals with expertise in AI, ethics, and technology.
+              NAIE’s board is multidisciplinary, bringing together different professional backgrounds and perspectives. We share a commitment to the ethical and responsible use of AI and to understanding its impact on people and society.
             </p>
           </div>
 
@@ -180,16 +180,16 @@ export default function OmOss() {
             <CardContent className="p-10 md:p-14">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Membership</h2>
+                  <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Participation</h2>
                   <p className="text-gray-600 leading-relaxed">
-                    NAIE is a foundation with partakers.
+                    Participants form the community around NAIE and contribute their knowledge, experience, and time to projects and activities. Together, we shape the foundation’s work. Participation carries no voting rights; responsibility for governing the foundation rests with the board.
                   </p>
                 </div>
       
                 <div className="text-center md:text-right flex flex-col md:items-end gap-3">
                   <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">
                     <Link to="/en/membership">
-                      Learn more about partaking <ArrowRight className="ml-2 w-4 h-4" />
+                      Learn more about participation <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>
       

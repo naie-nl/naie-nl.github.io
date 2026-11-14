@@ -18,10 +18,10 @@ export default function Membership() {
       <section className="bg-gradient-to-br from-[#0B2545] to-[#134074] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Membership</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Participation</h1>
             <p className="text-lg text-purple-200 leading-relaxed">
-              NAIE is an independent, non-profit association working for ethical and responsible use of artificial intelligence in Norway.
-              Membership is open to individuals who wish to support our work or contribute professionally over time.
+              NAIE is an independent, non-profit foundation working for ethical and responsible use of artificial intelligence in the Netherlands.
+              As a participant, you become part of the community around NAIE and can work with others to contribute to our activities.
             </p>
           </div>
         </div>
@@ -41,22 +41,17 @@ export default function Membership() {
                     </div>
                     <div>
                       <h2 className="text-2xl font-bold text-[#0B2545] mb-2">
-                        How does membership work?
+                        How does participation work?
                       </h2>
                       <div className="space-y-3 text-gray-600 leading-relaxed">
                         <p>
-                          All members begin as{" "}
-                          <span className="font-medium text-[#0B2545]">supporting members</span>.
-                          As a supporting member, you support NAIE’s purpose and may follow our work, take part in activities, and contribute in the way that suits you.
+                          As a participant, you are involved in NAIE’s work. Participation offers a way to be part of the foundation and work with others to promote the ethical and responsible use of AI.
                         </p>
                         <p>
-                          After a period of active engagement (typically 6–12 months), supporting members may apply to become{" "}
-                          <span className="font-medium text-[#0B2545]">voting members</span>.
-                          Voting members have formal voting rights at the annual meeting and may be elected to the board or other positions of trust.
+                          You can contribute your knowledge, experience, or time to projects, working groups, activities, or practical support. We welcome different backgrounds and perspectives; you do not need to be an AI specialist to contribute.
                         </p>
                         <p>
-                          Membership does not automatically include voting rights. The board evaluates applications for voting membership based on
-                          concrete contributions, engagement, and activity in the association.
+                          Participation is not membership of an association and carries no voting rights. The board is responsible for the foundation’s policies and decisions. Participants can share ideas and suggestions and help shape NAIE’s work.
                         </p>
                       </div>
                     </div>
@@ -72,10 +67,10 @@ export default function Membership() {
                     </div>
                     <div>
                       <h2 className="text-2xl font-bold text-[#0B2545] mb-2">
-                        What counts as active engagement?
+                        How can you contribute?
                       </h2>
                       <p className="text-gray-600 leading-relaxed">
-                        Active engagement is about how you contribute to the association’s work and goals. This can, for example, be through:
+                        Active engagement is about how you contribute to the foundation’s work and goals. This can, for example, be through:
                       </p>
                       <ul className="mt-4 space-y-2 text-sm text-gray-600">
                         {[
@@ -91,7 +86,7 @@ export default function Membership() {
                         ))}
                       </ul>
                       <p className="mt-4 text-gray-600 leading-relaxed">
-                        These are examples, not a fixed checklist. The board evaluates each case in light of the association’s purpose and practice.
+                        There are different ways to get involved. Together, we can explore how you would like to contribute based on your interests, experience, and available time.
                       </p>
                     </div>
                   </div>
@@ -107,8 +102,8 @@ export default function Membership() {
                     <div>
                       <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Privacy</h2>
                       <p className="text-gray-600 leading-relaxed">
-                        The information you submit is used solely for membership administration and membership-related contact.
-                        We do not publish member information without consent.
+                        The information you submit through the form is used for participant administration and communication about your involvement with NAIE.
+                        We do not publish participant information without consent.
                       </p>
                     </div>
                   </div>
@@ -135,10 +130,10 @@ export default function Membership() {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-[#0B2545] mb-2">
-                    Apply for membership
+                    Become a participant
                   </h2>
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                    Fill in the form below to become a supporting member. If you would like to contribute actively, you can mention it in the motivation field.
+                    Fill in the form below to register your interest in becoming a participant. Use the motivation field to tell us why you would like to get involved and how you might contribute.
                   </p>
                   <MembershipForm />
                 </CardContent>
@@ -148,9 +143,7 @@ export default function Membership() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-[#0B2545] mb-2">Note</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    We use two membership categories to distinguish between support and formal responsibility.
-                    Supporting membership is for anyone who wishes to be part of NAIE. Voting membership is for those who, over time,
-                    want to take on a more formal role in the association.
+                    Participants contribute to NAIE’s work and community. Participation carries no voting rights; responsibility for governing the foundation rests with the board.
                   </p>
                 </CardContent>
               </Card>

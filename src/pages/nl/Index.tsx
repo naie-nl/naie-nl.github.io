@@ -1,16 +1,16 @@
 import { Link, useParams } from "react-router-dom"; // 👈 1. Added useParams here
 import { useMemo } from "react";
-import { ArrowRight, BarChart3, Shield, Leaf, TrendingUp, Users, Award, HelpCircle } from "lucide-react";
+import { ArrowRight, BarChart3, Shield, Leaf, TrendingUp, Users, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const stats = [
-  { value: "3", label: "Peilers", icon: TrendingUp },
-  { value: "1200+", label: "AI-antwoorden geanalyseerd", icon: BarChart3 },
-  { value: "Nederlands eerste", label: "Bias-indicator", icon: Award },
-  { value: "Samenwerking", label: "met instituten", icon: Users },
+  { value: "3", label: "Pijlers", icon: TrendingUp },
+  { value: "NlBBQ", label: "In voorbereiding", icon: BarChart3 },
+  { value: "Ethiek", label: "Multidisciplinaire perspectieven", icon: Shield },
+  { value: "Samen", label: "Bijdragen als deelnemer", icon: Users },
 ];
 
 const questions = [
@@ -58,7 +58,7 @@ const questions = [
   },
   {
     question: "Wanneer AI-systemen fouten maken, wie moet er dan verantwoordelijk worden gehouden — en hoe?",
-    context: "We analyseren de verantwoordelijkheidslijnen tussen ontwikkelaars, leveranciers og organisaties die AI gebruiken.",
+    context: "We analyseren de verantwoordelijkheidslijnen tussen ontwikkelaars, leveranciers en organisaties die AI gebruiken.",
     pillar: "Verantwoorde AI",
     color: "#FF7A1A",
   },
@@ -119,7 +119,7 @@ const questions = [
 ];
 
 const milestones = [
-  { year: "Juni 2026", title: "NAIE gesticht", description: "Op 4 februari 2026 werd de Stichting Nederlands AI-Ethiek Instituut opgenomen in de Kamer van Koophandel." }
+  { year: "Juni 2026", title: "NAIE gesticht", description: "In juni 2026 werd Stichting Nederlands AI-Ethiek Instituut ingeschreven bij de Kamer van Koophandel." }
 ];
 
 export default function HomePage() {
@@ -131,7 +131,7 @@ export default function HomePage() {
     {
       title: "Bias",
       description:
-        "We onderzoeken en meten bias in AI-systemen. Via de NoBBQ-benchmark testen we grote taalmodellen op scheve verhoudingen gerelateerd aan geslacht, etniciteit, religie en andere beschermde categorieën.",
+        "We bereiden NlBBQ voor om bias in taalmodellen te onderzoeken binnen de Nederlandse taal en maatschappelijke context. Resultaten publiceren we zodra ze beschikbaar zijn.",
       icon: BarChart3,
       image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
       path: `/${lang}/activiteiten/bias`, // 🔄 Dynamic layout link string context
@@ -143,16 +143,16 @@ export default function HomePage() {
         "Wij stimuleren verantwoorde ontwikkeling en gebruik van kunstmatige intelligentie in Nederland. Ons werk omvat richtlijnen, best practices en tools voor ethische AI-implementatie.",
       icon: Shield,
       image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/9162907a-6407-4f58-908a-72c3fb328131.png",
-      path: `/${lang}/activiteiten/ansvarlig-ai`, // 🔄 Dynamic layout link string context
+      path: `/${lang}/activiteiten/verantwoorde-ai`, // 🔄 Dynamic layout link string context
       color: "#FF7A1A",
     },
     {
       title: "Duurzaamheid",
       description:
-        "Wij onderzoeken de milieu-impact van AI-systemen og werken aan een duurzamere AI-ontwikkeling. We meten en rapporteren over energieverbruik en CO2-voetafdruk.",
+        "Wij onderzoeken de milieu-impact van AI-systemen en werken aan een duurzamere AI-ontwikkeling. We richten ons op energieverbruik, hulpbronnen en transparantie over de milieu-impact.",
       icon: Leaf,
       image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/5dbf5d3e-295f-427b-86d9-cfecd9b430b2.png",
-      path: `/${lang}/activiteiten/baerekraft`, // 🔄 Dynamic layout link string context
+      path: `/${lang}/activiteiten/duurzaamheid`, // 🔄 Dynamic layout link string context
       color: "#10B981",
     },
   ], [lang]);
@@ -195,7 +195,7 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-purple-200 leading-relaxed mb-8 max-w-2xl">
-              Onafhankelijke non-profitorganisatie die statistieken en inzichten levert over Bias, Duurzaamheid en Verantwoorde AI.
+              Een onafhankelijke stichting zonder winstoogmerk die zich inzet voor bias-onderzoek, duurzaamheid en verantwoorde AI.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg px-6">
@@ -285,7 +285,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] mb-4">Wat doet NAIE?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              We werken met drie hoofdpeilers om ethisch en verantwoord gebruik van kunstmatige intelligentie in Nederland te stimuleren.
+              We werken met drie hoofdpijlers om ethisch en verantwoord gebruik van kunstmatige intelligentie in Nederland te stimuleren.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -358,7 +358,7 @@ export default function HomePage() {
 	    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 	  	<h2 className="text-3xl md:text-4xl font-bold mb-4">Wilt u meer weten?</h2>
 	  	<p className="text-purple-200 text-lg mb-8 max-w-2xl mx-auto">
-	  	  Ontdek onze resultaten, bronnen en leer meer over hoe NAIE zich inzet voor ethische AI in Nederland.
+	  	  Ontdek onze werkgebieden en lees hoe u kunt bijdragen aan ethische AI in Nederland.
 	  	</p>
 	  	<div className="flex flex-wrap justify-center gap-4">
 	  	  {/* Updated with template string dynamic language route context */}

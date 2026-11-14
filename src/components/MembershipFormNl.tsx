@@ -1,78 +1,80 @@
 import { Button } from "@/components/ui/button";
 
-export default function MembershipForm() {
+export default function MembershipFormNl() {
   return (
     <form
       className="space-y-5"
-      action="https://formspree.io/f/mdalyoko"
+      action="https://formspree.io/f/xoedjzgn"
       method="POST"
     >
-      {/* Honeypot (enkelt spamfilter) */}
+      {/* Honeypot (eenvoudig spamfilter) */}
       <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
-      {/* Subject i e-posten du mottar */}
-      <input type="hidden" name="_subject" value="Ny medlemsforespørsel fra naie.no" />
+      {/* Onderwerp van de ontvangen e-mail */}
+      <input type="hidden" name="_subject" value="Nieuwe deelnemersaanmelding via naie.nl" />
 
-      {/* Sikrer tydelig kategorisering i innboksen */}
-      <input type="hidden" name="topic" value="Medlemskap" />
+      {/* Categorie voor de deelnemersadministratie */}
+      <input type="hidden" name="topic" value="Deelnemerschap" />
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Navn</label>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Naam</label>
         <input
           name="name"
           type="text"
           required
           className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
-          placeholder="Ditt navn"
+          placeholder="Uw naam"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">E-post</label>
+        <label className="block text-sm font-medium text-gray-700 mb-1">E-mailadres</label>
         <input
           name="email"
           type="email"
           required
           className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
-          placeholder="din@epost.no"
+          placeholder="uwnaam@voorbeeld.nl"
         />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Arbeidssted / tilknytning <span className="text-gray-400">(valgfritt)</span>
+          Organisatie / achtergrond <span className="text-gray-400">(optioneel)</span>
         </label>
         <input
           name="affiliation"
           type="text"
           className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm"
-          placeholder="F.eks. offentlig sektor, akademia, privat næringsliv"
+          placeholder="Bijvoorbeeld overheid, onderwijs, onderzoek of bedrijfsleven"
         />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Ønsker du primært å støtte eller bidra aktivt?
+          Hoe zou u willen bijdragen?
         </label>
         <select
           name="intent"
           className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm bg-white"
-          defaultValue="Støtte"
+          defaultValue="Dat weet ik nog niet"
           required
         >
-          <option>Støtte</option>
-          <option>Bidra aktivt</option>
-          <option>Usikker</option>
+          <option>Ondersteunen bij activiteiten en evenementen</option>
+          <option>Bijdragen aan projecten of werkgroepen</option>
+          <option>Dat weet ik nog niet</option>
         </select>
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Kort om motivasjon <span className="text-gray-400">(valgfritt)</span></label>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Korte motivatie <span className="text-gray-400">(optioneel)</span>
+        </label>
         <textarea
           name="message"
           rows={4}
           className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#134074]/30 focus:border-[#134074] transition-colors text-sm resize-none"
-          placeholder="Hva motiverer deg til å bli medlem, og hvordan ønsker du eventuelt å bidra?"
+          placeholder="Waarom wilt u deelnemer worden en hoe zou u willen bijdragen?"
         />
       </div>
 
@@ -80,11 +82,15 @@ export default function MembershipForm() {
         type="submit"
         className="w-full bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg"
       >
-        Send medlemsforespørsel
+        Aanmelden als deelnemer
       </Button>
 
+      <p className="text-sm text-gray-600 leading-relaxed">
+        Deelnemerschap geeft geen stemrecht. De bestuurlijke verantwoordelijkheid ligt bij het bestuur.
+      </p>
+
       <p className="text-xs text-gray-500 leading-relaxed">
-        Informasjonen brukes kun til medlemsadministrasjon. Vi publiserer ikke medlemsinformasjon offentlig uten samtykke.
+        We gebruiken uw gegevens voor de deelnemersadministratie en communicatie over uw betrokkenheid bij NAIE. We publiceren geen deelnemersgegevens zonder toestemming.
       </p>
     </form>
   );

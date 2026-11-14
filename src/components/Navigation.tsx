@@ -4,9 +4,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/naie_nl_logo_v1_with_text.svg";
 
-// Import your content arrays to dynamically translate asymmetric article slugs
-import { BLOGS as BLOGS_NO } from "@/content/nl/blog";
-import { BLOGS as BLOGS_EN } from "@/content/en/blog";
 
 type Lang = "nl" | "en";
 
@@ -25,7 +22,7 @@ const navItemsNl: NavItem[] = [
     children: [
       { label: "Bias", path: "/activiteiten/bias" },
       { label: "Verantwoorde AI", path: "/activiteiten/verantwoorde-ai" },
-      { label: "duurzaamheid", path: "/activiteiten/duurzaamheid" },
+      { label: "Duurzaamheid", path: "/activiteiten/duurzaamheid" },
     ],
   },
   {
@@ -34,7 +31,7 @@ const navItemsNl: NavItem[] = [
     children: [
       { label: "Resultaten", path: "/resultaten" },
       { label: "Blog", path: "/blog" },
-      { label: "Resources", path: "/resources" },
+      { label: "Bronnen & hulpmiddelen", path: "/resources" },
       { label: "Nieuws", path: "/nieuws" },
       { label: "Pers & Events", path: "/pers-en-events" },
     ],
@@ -52,8 +49,8 @@ const navItemsEn: NavItem[] = [
     path: "/activities",
     children: [
       { label: "Bias", path: "/activities/bias" },
-      { label: "Responsible AI", path: "/activities/ansvarlig-ai" },
-      { label: "Sustainability", path: "/activities/baerekraft" },
+      { label: "Responsible AI", path: "/activities/responsible-ai" },
+      { label: "Sustainability", path: "/activities/sustainability" },
     ],
   },
   {
@@ -68,7 +65,7 @@ const navItemsEn: NavItem[] = [
     ],
   },
   { label: "For organisations", path: "/for-organisations" },
-  { label: "Membership", path: "/membership" },
+  { label: "Participation", path: "/membership" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -83,13 +80,11 @@ const pathTranslations: Record<string, string> = {
   "/activities/bias": "/activiteiten/bias",
   "/activiteiten/verantwoorde-ai": "/activities/responsible-ai",
   "/activities/responsible-ai": "/activiteiten/verantwoorde-ai",
-  "/activiteiten/duurzaamheid": "/activities/baerekraft",
-  "/activities/baerekraft": "/activiteiten/duurzaamheid",
+  "/activiteiten/duurzaamheid": "/activities/sustainability",
+  "/activities/sustainability": "/activiteiten/duurzaamheid",
   "/resultaten": "/results",
   "/results": "/resultaten",
   "/blog": "/blog",
-  "/blog": "/blog",
-  "/resources": "/resources",
   "/resources": "/resources",
   "/nieuws": "/news",
   "/news": "/nieuws",
@@ -99,7 +94,7 @@ const pathTranslations: Record<string, string> = {
   "/for-organisations": "/voor-organisaties",
   "/deelnemerschap": "/membership",
   "/membership": "/deelnemerschap",
-  "/contact": "/contact",
+  "/privacy": "/privacy",
   "/contact": "/contact",
 };
 
@@ -133,7 +128,7 @@ export default function Navigation() {
 
     if (maybeLang === "nl" || maybeLang === "en") {
       const rest = "/" + parts.slice(2).join("/");
-      // Keep root as "/" and strip training slashes safely
+      // Keep root as "/" and strip trailing slashes safely
       return rest === "/" ? "/" : rest.replace(/\/$/, "") || "/";
     }
     return pathname === "/" ? "/" : pathname.replace(/\/$/, "") || "/";
@@ -149,56 +144,14 @@ export default function Navigation() {
 
   const switchLang = (next: Lang) => {
     if (lang === next) return;
-
-    const cleanPath = currentPathNoLang;
-
-    // 1. Direct translation mapping check for static pages
-    if (pathTranslations[cleanPath]) {
-      navigate(`/${next}${pathTranslations[cleanPath]}`);
-      return;
-    }
-
-    // 2. Handle paths with unique / translated blog slugs dynamically
-    if (cleanPath.startsWith("/blogg/")) {
-      const noSlug = cleanPath.substring(7);
-      // Find the index position of the current Norwegian post
-      const postIndex = BLOGS_NO.findIndex((p) => p.slug === noSlug);
-      
-      // If found and the English post exists at that same list position, route there
-      if (postIndex !== -1 && BLOGS_EN[postIndex]) {
-        navigate(`/${next}/blog/${BLOGS_EN[postIndex].slug}`);
-      } else {
-        navigate(`/${next}/blog`);
-      }
-      return;
-    }
-
-    if (cleanPath.startsWith("/blog/")) {
-      const enSlug = cleanPath.substring(6);
-      // Find the index position of the current English post
-      const postIndex = BLOGS_EN.findIndex((p) => p.slug === enSlug);
-      
-      // Map it back to the exact Norwegian post at that index
-      if (postIndex !== -1 && BLOGS_NO[postIndex]) {
-        navigate(`/${next}/blogg/${BLOGS_NO[postIndex].slug}`);
-      } else {
-        navigate(`/${next}/blogg`);
-      }
-      return;
-    }
-
-    // 3. Handle sub-activities fallback safely if you configure them dynamically later
-    if (cleanPath.startsWith("/aktiviteter/")) {
-      navigate(`/${next}/activities/${cleanPath.substring(13)}`);
-      return;
-    }
-    if (cleanPath.startsWith("/activities/")) {
-      navigate(`/${next}/aktiviteter/${cleanPath.substring(12)}`);
-      return;
-    }
-
-    // 4. Complete fallback safety valve
-    navigate(`/${next}`);
+    const translatedPath = pathTranslations[currentPathNoLang];
+    // Posts have no translations yet; return to the target language's blog list.
+    const targetPath = translatedPath ?? (
+      currentPathNoLang.startsWith("/blog/") ? "/blog" : "/"
+    );
+    navigate(`${withLang(next, targetPath)}${location.search}${location.hash}`);
+    setMobileOpen(false);
+    setActiveDropdown(null);
   };
 
   return (
@@ -281,7 +234,7 @@ export default function Navigation() {
                     : "text-gray-500 hover:text-gray-700"
                 }`}
               >
-                <span className="text-base leading-none">NL</span>
+                <span className="text-base leading-none">🇳🇱</span>
                 <span className="hidden sm:inline">NL</span>
               </button>
               <button

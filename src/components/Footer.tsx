@@ -26,19 +26,19 @@ export default function Footer() {
           results: "Results",
           blog: "Blog",
           resources: "Resources",
-          personsvern: "Privacy",
+          privacy: "Privacy",
           contact: "Contact",
           organisations: "For organisations",
           copyright:
-            "Dutch AI Ethics Foundation (NAIE). All rights reserved.",
+            "Dutch Institute for AI Ethics (NAIE). All rights reserved.",
         }
       : {
           about: "Over NAIE",
           activities: "Activiteiten",
           results: "Resultaten",
           blog: "Blog",
-          resources: "Resources",
-          personsvern: "Privacy",
+          resources: "Bronnen & hulpmiddelen",
+          privacy: "Privacy",
           contact: "Contact",
           organisations: "Voor organisaties",
           copyright:
@@ -64,12 +64,12 @@ export default function Footer() {
           {/* Column 2 */}
           <div>
             <h4 className="font-semibold mb-4">
-              {lang === "en" ? "Navigation" : "Navigasjon"}
+              {lang === "en" ? "Navigation" : "Navigatie"}
             </h4>
             <ul className="space-y-2 text-sm text-purple-200">
               <li>
                 <Link 
-                  to={withLang(lang, lang === "en" ? "/about-us" : "/om-oss")} 
+                  to={withLang(lang, lang === "en" ? "/about-us" : "/over-ons")} 
                   className="hover:text-white"
                 >
                   {content.about}
@@ -77,7 +77,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to={withLang(lang, lang === "en" ? "/activities" : "/aktiviteter")}
+                  to={withLang(lang, lang === "en" ? "/activities" : "/activiteiten")}
                   className="hover:text-white"
                 >
                   {content.activities}
@@ -85,7 +85,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to={withLang(lang, lang === "en" ? "/results" : "/resultater")}
+                  to={withLang(lang, lang === "en" ? "/results" : "/resultaten")}
                   className="hover:text-white"
                 >
                   {content.results}
@@ -93,7 +93,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link 
-                  to={withLang(lang, lang === "en" ? "/blog" : "/blogg")} 
+                  to={withLang(lang, lang === "en" ? "/blog" : "/blog")} 
                   className="hover:text-white"
                 >
                   {content.blog}
@@ -101,7 +101,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to={withLang(lang, lang === "en" ? "/resources" : "/ressurser")}
+                  to={withLang(lang, lang === "en" ? "/resources" : "/resources")}
                   className="hover:text-white"
                 >
                   {content.resources}
@@ -109,10 +109,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to={withLang(lang, lang === "en" ? "/privacy" : "/personsvern")}
+                  to={withLang(lang, lang === "en" ? "/privacy" : "/privacy")}
                   className="hover:text-white"
                 >
-                  {content.personsvern}
+                  {content.privacy}
                 </Link>
               </li>
             </ul>
@@ -121,12 +121,12 @@ export default function Footer() {
           {/* Column 3 */}
           <div>
             <h4 className="font-semibold mb-4">
-              {lang === "en" ? "Get in touch" : "Ta kontakt"}
+              {lang === "en" ? "Get in touch" : "Neem contact op"}
             </h4>
             <ul className="space-y-2 text-sm text-purple-200">
               <li>
                 <Link
-                  to={withLang(lang, lang === "en" ? "/for-organisations" : "/for-organisasjoner")}
+                  to={withLang(lang, lang === "en" ? "/for-organisations" : "/voor-organisaties")}
                   className="hover:text-white"
                 >
                   {content.organisations}
@@ -134,7 +134,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link 
-                  to={withLang(lang, lang === "en" ? "/contact" : "/kontakt")} 
+                  to={withLang(lang, lang === "en" ? "/contact" : "/contact")} 
                   className="hover:text-white"
                 >
                   {content.contact}
@@ -142,10 +142,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:kontakt@naie.no"
+                  href="mailto:contact@naie.nl"
                   className="hover:text-white"
                 >
-                  kontakt@naie.no
+                  contact@naie.nl
                 </a>
               </li>
             </ul>

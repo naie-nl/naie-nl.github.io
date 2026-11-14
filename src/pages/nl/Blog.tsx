@@ -7,7 +7,16 @@ import { useEffect, useMemo, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import { BLOGS } from "@/content/nl/blog";
+// Add only posts published by the Dutch foundation here.
+type BlogEntry = {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  externalUrl?: string;
+  file: () => Promise<{ default: string }>;
+};
+const BLOGS: BlogEntry[] = [];
 
 function PageWrapper({
   title,
@@ -38,10 +47,13 @@ function PageWrapper({
 /* ===================== BLOG LIJST ===================== */
 export function Blog() {
   return (
-    <PageWrapper title="Blog" subtitle="Alle blogberichten van NAIE.">
+    <PageWrapper title="Blog" subtitle="Artikelen en reflecties van Stichting Nederlands AI-Ethiek Instituut.">
       <section className="pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
+            {BLOGS.length === 0 && (
+              <Card className="border-0 shadow-md"><CardContent className="p-8"><p className="text-gray-600 leading-relaxed">Er zijn nog geen blogberichten gepubliceerd. Hier verschijnen straks artikelen en reflecties van de Nederlandse stichting.</p></CardContent></Card>
+            )}
             {BLOGS
               .slice()
               .sort((a, b) => (a.date < b.date ? 1 : -1))
@@ -64,7 +76,7 @@ export function Blog() {
                             rel="noreferrer"
                             className="mt-3 text-[#FF7A1A] text-sm font-medium inline-flex items-center gap-1 hover:gap-2 transition-all"
                           >
-                            Lees op naie.no <ArrowRight className="w-4 h-4" />
+                            Lees het artikel <ArrowRight className="w-4 h-4" />
                           </a>
                         ) : (
                           <Link
@@ -111,7 +123,7 @@ export function BlogPost() {
         <section className="pb-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-gray-600">Deze pagina bestaat niet.</p>
-            <Link to="/blog" className="text-[#FF7A1A] font-medium inline-flex items-center gap-1 mt-4">
+            <Link to="/nl/blog" className="text-[#FF7A1A] font-medium inline-flex items-center gap-1 mt-4">
               Terug naar blog <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -130,7 +142,7 @@ export function BlogPost() {
             </ReactMarkdown>
           </article>
 
-          <Link to="/blog" className="text-[#FF7A1A] font-medium inline-flex items-center gap-1 mt-8">
+          <Link to="/nl/blog" className="text-[#FF7A1A] font-medium inline-flex items-center gap-1 mt-8">
             Terug naar blog <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

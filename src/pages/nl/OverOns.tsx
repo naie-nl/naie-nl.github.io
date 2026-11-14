@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const boardMembers = [
   {
     name: "Jessica Balla - de Boer",
-    role: "Bestuursvoorzitter",
+    role: "Voorzitter",
     description: "Projectmanager Locatie- en Gebiedsontwikkeling, Gemeente Hoorn.",
     image: "jessica-balla-de-boer.jpg",
     linkedin: "https://www.linkedin.com/in/jessica-balla-de-boer-7a731333/",
@@ -82,7 +82,7 @@ export default function OmOss() {
                 {
                   icon: Users,
                   title: "Gemeenschap",
-                  desc: "We bouwen aan een netwerk van experts en betrokken actoren.",
+                  desc: "We brengen mensen met verschillende achtergronden samen rond ethisch en verantwoord gebruik van AI.",
                 },
               ].map((item) => (
                 <Card key={item.title} className="border-0 shadow-md hover:shadow-lg transition-shadow">
@@ -108,7 +108,7 @@ export default function OmOss() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Het Bestuur</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Het bestuur van NAIE bestaat uit gedreven professionals met expertise op het gebied van AI, ethiek en technologie.
+              Het bestuur van NAIE is multidisciplinair en brengt verschillende professionele achtergronden en perspectieven samen. Wat ons verbindt, is de inzet voor ethisch en verantwoord gebruik van AI en aandacht voor de gevolgen voor mens en samenleving.
             </p>
           </div>
 
@@ -175,8 +175,7 @@ export default function OmOss() {
                 <div>
                   <h2 className="text-3xl font-bold text-[#0B2545] mb-4">Deelnemerschap</h2>
                   <p className="text-gray-600 leading-relaxed">
-                    NAIE is een stichting die rust op de inzet van haar deelnemers. Alle deelnemers starten als steundeelnemer, en na verloop van tijd kunnen deelnemers die actiever willen bijdragen
-                    stemrecht krijgen door actieve participatie. We zijn transparant over hoe dit in zijn werk gaat.
+                    Deelnemers vormen de gemeenschap rond NAIE en dragen met hun kennis, ervaring en tijd bij aan projecten en activiteiten. Zo geven we samen vorm aan het werk van de stichting. Deelnemerschap geeft geen stemrecht; de bestuurlijke verantwoordelijkheid ligt bij het bestuur.
                   </p>
                 </div>
       

@@ -3,7 +3,6 @@ import {
   BookOpen,
   ExternalLink,
   Newspaper,
-  Calendar,
   Mail,
   Phone,
   MapPin,
@@ -16,10 +15,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import GitHubRepoCard from "@/components/GitHubRepoCard";
 
 /**
- * EN pages should link to /en/... to avoid jumping to /no/... by accident.
+ * English pages use the /en/ route prefix.
  */
 function en(path: string) {
   if (path === "/") return "/en";
@@ -31,9 +29,9 @@ export function Resources() {
   const resources = [
     {
       icon: FileText,
-      title: "NoBBQ Benchmark",
+      title: "NlBBQ — in preparation",
       description:
-        "Our benchmark for measuring bias in large language models in Norwegian. Available as open source.",
+        "Planned benchmark project for examining bias in language models in the Dutch context. No results or datasets have been published yet.",
       link: en("/activities/bias"),
       linkText: "Read more",
     },
@@ -41,7 +39,7 @@ export function Resources() {
       icon: BookOpen,
       title: "Reports and publications",
       description:
-        "Research reports, analyses, and publications from NAIE’s work on AI ethics.",
+        "Future research reports, analyses, and publications from the Dutch foundation will be shared here.",
       link: en("/results"),
       linkText: "View results",
     },
@@ -49,7 +47,7 @@ export function Resources() {
       icon: Video,
       title: "Presentations",
       description:
-        "Recordings and material from conferences, webinars, and talks about AI ethics.",
+        "Materials from future presentations, webinars, and talks on AI ethics will be shared here.",
       link: en("/press-and-events"),
       linkText: "View events",
     },
@@ -99,9 +97,6 @@ export function Resources() {
                 </CardContent>
               </Card>
             ))}
-          
-            {/* GitHub repo preview */}
-            <GitHubRepoCard owner="naie-no" repo="NoBBQ" />
           </div>
         </div>
       </section>
@@ -111,29 +106,12 @@ export function Resources() {
 
 /* ===================== NEWS ===================== */
 export function News() {
-  const items = [
-    {
-      date: "Feb 2026",
-      title: "NAIE launched publicly",
-      summary: "On February 2, NAIE was launched to the public via LinkedIn.",
-    },
-    {
-      date: "Feb 2026",
-      title: "Board registration completed",
-      summary: "Latest board changes have been registered officially.",
-    },
-    {
-      date: "Sept 2025",
-      title: "NAIE was founded",
-      summary:
-        "Norwegian AI Ethics Association was established as an independent, non-profit association to promote ethical AI in Norway.",
-    },
-  ];
+  const items = [{ date: "June 2026", title: "NAIE foundation registered", summary: "Stichting Nederlands AI-Ethiek Instituut was registered with the Dutch Chamber of Commerce in June 2026." }];
 
   return (
     <PageWrapper
       title="News"
-      subtitle="Latest updates from the Norwegian AI Ethics Association."
+      subtitle="Latest updates from the Dutch Institute for AI Ethics."
     >
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,109 +150,28 @@ export function News() {
 
 /* ===================== PRESS & EVENTS ===================== */
 export function PressAndEvents() {
-const pressItems = [
-  {
-    type: "Event",
-    icon: Calendar,
-    title: "June 2026 - EuroSTAR",
-    description:
-      "We share our latest NoBBQ learnings and results at a major European testing conference.",
-    link: "https://conference.eurostarsoftwaretesting.com/event/2026/can-we-measure-local-bias-in-ai-systems/",
-  },
-  {
-    type: "Press",
-    icon: Mic,
-    title: "January 2026 - Podcast: Bias in AI systems",
-    description:
-      "Vi discuss bias in AI systems with Simen Sommerfeldt from Bouvet.",
-    link: "https://www.bouvet.no/podcasts/fordommer-i-ai",
-  },
-  {
-    type: "Event",
-    icon: Calendar,
-    title: "September 2025 - GoForIt: KI i offentlig sektor conference",
-    description:
-      "We present our findings at the GoForIt conference.",
-    link: "https://tankesmiengoforit.no/event/program-ki-i-offentlig-sektor-2025/",
-  },
-  {
-    type: "Event",
-    icon: Calendar,
-    title: "September 2025 - ODIN (Oslo) testing conference",
-    description:
-      "We share our latest findings at Norways biggest testing community.",
-    link: "https://event.checkin.no/104532/testkonferansen-odin-2025",
-  },
-];
-
   return (
-    <PageWrapper
-      title="Press & Events"
-      subtitle="Events, talks, and media coverage featuring NAIE."
-    >
+    <PageWrapper title="Press & events" subtitle="Presentations, events, and media coverage from the Dutch foundation.">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
-            {pressItems.map((item, i) => {
-			  const isExternal = item.link.startsWith("http");
-
-			  const Wrapper = isExternal ? "a" : Link;
-			  const wrapperProps = isExternal
-				? {
-					href: item.link,
-					target: "_blank",
-					rel: "noopener noreferrer",
-				  }
-				: {
-					to: item.link,
-				  };
-
-			  return (
-				<Wrapper
-				  key={i}
-				  {...wrapperProps}
-				  className="block group"
-				>
-				  <Card className="border-0 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer">
-					<CardContent className="p-6">
-					  <div className="flex items-start gap-4">
-						<div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0 group-hover:bg-[#E0D8FF] transition-colors">
-						  <item.icon className="w-6 h-6 text-[#134074]" />
-						</div>
-						<div>
-						  <span className="text-xs font-semibold text-[#FF7A1A] uppercase tracking-wider">
-							{item.type}
-						  </span>
-						  <h3 className="text-lg font-bold text-[#0B2545] mt-1 group-hover:text-[#134074] transition-colors">
-							{item.title}
-						  </h3>
-						  <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-							{item.description}
-						  </p>
-						</div>
-					  </div>
-					</CardContent>
-				  </Card>
-				</Wrapper>
-			  );
-			})}
-          </div>
+          <Card className="border-0 shadow-md"><CardContent className="p-8">
+            <p className="text-gray-600 leading-relaxed">No press items or events have been published here yet. New contributions from the Dutch foundation will appear on this page.</p>
+          </CardContent></Card>
         </div>
       </section>
     </PageWrapper>
   );
 }
 
-/* ===================== FOR ORGANISATIONS ===================== */
 export function ForOrganisations() {
   const offerings = [
     {
       title: "Talks and presentations",
       icon: Mic,
       description:
-        "Talks on bias and ethical challenges in generative AI, with a focus on Norwegian language and context.",
+        "Talks on bias and ethical challenges in generative AI, with a focus on Dutch language and context.",
       bullets: [
-        "Bias in GenAI and why it matters in Norway",
+        "Bias in GenAI and why it matters in the Netherlands",
         "Risk and responsibility in public sector use cases",
         "Insights and learnings from NAIE research work",
       ],
@@ -306,7 +203,7 @@ export function ForOrganisations() {
   return (
     <PageWrapper
       title="For organisations"
-      subtitle="Professional contributions that build understanding of bias, ethics, and societal impact of AI in a Norwegian context."
+      subtitle="Professional contributions that build understanding of bias, ethics, and societal impact of AI in a Dutch context."
     >
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -317,9 +214,9 @@ export function ForOrganisations() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Norwegian AI Ethics Association (NAIE) is a non-profit
+                  Dutch Institute for AI Ethics (NAIE) is a non-profit
                   organisation working to increase understanding of bias, ethics,
-                  and societal effects of AI in a Norwegian context.
+                  and societal effects of AI in a Dutch context.
                 </p>
                 <p>
                   We offer professional contributions to organisations that want
@@ -398,7 +295,7 @@ export function Contact() {
   return (
     <PageWrapper
       title="Contact"
-      subtitle="Get in touch with us for questions, collaboration, or membership."
+      subtitle="Get in touch with us for questions, collaboration, or participation."
     >
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -410,7 +307,7 @@ export function Contact() {
 
               <div className="space-y-6">
                 {[
-                  { icon: Mail, label: "Email", value: "kontakt@naie.no" },
+                  { icon: Mail, label: "Email", value: "contact@naie.nl" },
                   {
                     icon: MapPin,
                     label: "Address",
@@ -460,7 +357,7 @@ export function Contact() {
 
                   <form
                     className="space-y-5"
-                    action="https://formspree.io/f/mdalyoko"
+                    action="https://formspree.io/f/xoedjzgn"
                     method="POST"
                   >
                     <input
@@ -473,7 +370,7 @@ export function Contact() {
                     <input
                       type="hidden"
                       name="_subject"
-                      value="New message from naie.no"
+                      value="New message from naie.nl"
                     />
 
                     <div>
@@ -513,7 +410,7 @@ export function Contact() {
                       >
                         <option>General inquiry</option>
                         <option>Collaboration</option>
-                        <option>Membership</option>
+                        <option>Participation</option>
                         <option>Press</option>
                         <option>Other</option>
                       </select>

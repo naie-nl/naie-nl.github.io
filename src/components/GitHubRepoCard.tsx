@@ -51,43 +51,39 @@ function compact(n: number, locale?: string) {
 }
 
 export default function GitHubRepoCard({
-  owner = "naie-no",
-  repo = "NoBBQ",
+  owner,
+  repo,
 }: {
   owner?: string;
   repo?: string;
 }) {
   const location = useLocation();
-  const isNorwegian = location.pathname.startsWith("/no");
+  const isDutch = !location.pathname.startsWith("/en");
 
-  const locale = isNorwegian ? "nb-NO" : undefined;
+  const locale = isDutch ? "nl-NL" : "en-GB";
 
-  const labels: Labels = isNorwegian
+  const labels: Labels = isDutch
     ? {
-        title: "Åpen kildekode på GitHub",
-        blurb:
-          "Datastruktur og evalueringsskript for NoBBQ er offentlig tilgjengelig. Åpenhet og etterprøvbarhet er viktig når vi måler bias.",
-        stars: "stjerner",
+        title: "Project op GitHub",
+        blurb: "Bekijk de projectbestanden en documentatie op GitHub.",
+        stars: "sterren",
         forks: "forks",
-        updated: "Oppdatert",
-        viewRepo: "Se repository",
-        loading: "Laster…",
-        noLicense: "Ingen lisens",
-        errorMessage:
-          "Forhåndsvisning utilgjengelig akkurat nå, men lenken fungerer.",
+        updated: "Bijgewerkt",
+        viewRepo: "Bekijk repository",
+        loading: "Laden…",
+        noLicense: "Geen licentie vermeld",
+        errorMessage: "Het voorbeeld is momenteel niet beschikbaar. U kunt de repository via de link openen.",
       }
     : {
-        title: "Open source on GitHub",
-        blurb:
-          "Full dataset structure and scoring scripts are available publicly. Transparency and reproducibility matter when measuring bias.",
+        title: "Project on GitHub",
+        blurb: "Explore the project files and documentation on GitHub.",
         stars: "stars",
         forks: "forks",
         updated: "Updated",
         viewRepo: "View repository",
         loading: "Loading…",
-        noLicense: "No license",
-        errorMessage:
-          "Repo preview unavailable right now, but the link still works.",
+        noLicense: "No license listed",
+        errorMessage: "The preview is currently unavailable. You can open the repository using the link.",
       };
 
   const [data, setData] = React.useState<RepoData | null>(null);
@@ -96,7 +92,13 @@ export default function GitHubRepoCard({
   >("idle");
 
   React.useEffect(() => {
+    if (!owner || !repo) {
+      setData(null);
+      setStatus("idle");
+      return;
+    }
     let alive = true;
+    setData(null);
 
     async function load() {
       try {
@@ -128,6 +130,8 @@ export default function GitHubRepoCard({
       alive = false;
     };
   }, [owner, repo]);
+
+  if (!owner || !repo) return null;
 
   const url = data?.html_url ?? `https://github.com/${owner}/${repo}`;
 

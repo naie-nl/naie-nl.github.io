@@ -5,38 +5,34 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+type ActivitySection = { title: string; content?: string; points?: string[] };
+
 const activities = {
   overview: {
     title: "Activiteiten",
-    subtitle: "NAIE werkt met drie hoofdpeilers om ethische og verantwoorde AI in Noorwegen te bevorderen.",
+    subtitle: "NAIE werkt met drie hoofdpijlers om ethische en verantwoorde AI in Nederland te bevorderen.",
   },
   bias: {
     title: "Bias",
     icon: BarChart3,
     color: "#134074",
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
-    intro: "NAIE onderzoekt en meet bias in AI-systemen door middel van systematische testen en benchmarking.",
+    intro: "NAIE bereidt onderzoek naar bias in AI-systemen voor, met NlBBQ als gepland benchmarkproject.",
     sections: [
       {
-        title: "NoBBQ – Norwegian Bias Benchmark for Question-answering",
-        content:
-          "NoBBQ is de eerste benchmark in Noorwegen die specifiek is ontworpen om bias te meten in grote taalmodellen (LLM's) in het Noors. De benchmark test AI-modellen op scheve verhoudingen gerelateerd aan beschermde categorieën zoals geslacht, etniciteit, religie, leeftijd, handicap en seksuele geaardheid.",
+            "title": "NlBBQ — in voorbereiding",
+            "content": "NlBBQ is ons geplande benchmarkproject voor onderzoek naar bias in taalmodellen in de Nederlandse taal en maatschappelijke context."
       },
       {
-        title: "Hoe werkt NoBBQ?",
-        content:
-          "NoBBQ bestaat uit duizenden vragen die zijn ontworpen om impliciete en expliciete bias in AI-antwoorden te onthullen. De modellen worden getest met contextuele scenario's waarin het antwoord niet mag worden beïnvloed door stereotypen of vooroordelen. We analyseren de antwoorden systematisch om patronen van partijdigheid te identificeren.",
+            "title": "Onze aanpak",
+            "content": "Bij de voorbereiding staan herkenbare scenario’s en een zorgvuldige aansluiting op de Nederlandse context centraal. De gebruikte methode en beperkingen worden bij toekomstige resultaten toegelicht."
       },
       {
-        title: "Resultaten en bevindingen",
-        points: [
-          "Meer dan 1200 AI-gegenereerde antwoorden zijn geanalyseerd",
-          "Significante verschillen in bias-niveaus tussen verschillende modellen",
-          "Noorwegens eerste systematische bias-indicator voor AI",
-          "Samenwerking met LDO om bevindingen te koppelen aan anti-discriminatiewetgeving",
-        ],
-      },
-    ],
+            "title": "Publicaties",
+            "content": "Er zijn op deze website nog geen NlBBQ-resultaten of datasets gepubliceerd. Zodra deze beschikbaar zijn, delen we ze op de resultatenpagina.",
+            "points": []
+      }
+] as ActivitySection[],
   },
   "verantwoorde-ai": {
     title: "Verantwoorde AI",
@@ -53,7 +49,7 @@ const activities = {
       {
         title: "De aanpak van NAIE",
         content:
-          "Wij werken aan het ontwikkelen van praktische tools en richtlijnen die organisaties kunnen gebruiken om verantwoorde AI te implementeren. Dit omvat kaders voor ethische beoordeling, checklists voor AI-projecten en begeleiding voor transparantie og uitlegbaarheid.",
+          "Wij werken aan het ontwikkelen van praktische tools en richtlijnen die organisaties kunnen gebruiken om verantwoorde AI te implementeren. Dit omvat kaders voor ethische beoordeling, checklists voor AI-projecten en begeleiding voor transparantie en uitlegbaarheid.",
       },
       {
         title: "Aandachtsgebieden",
@@ -61,7 +57,7 @@ const activities = {
           "Transparantie en uitlegbaarheid in AI-systemen",
           "Eerlijkheid en non-discriminatie",
           "Privacy en gegevensbeveiliging",
-          "Menselijke controle og oversturing",
+          "Menselijke controle en oversturing",
           "Verantwoording en traceerbaarheid",
         ],
       },
@@ -82,7 +78,7 @@ const activities = {
       {
         title: "Ons werk",
         content:
-          "Wij meten en rapporteren over het energieverbruik en de CO2-voetafdruk van AI-systemen die in Noorwegen worden gebruikt. Door middel van onderzoek en samenwerking ontwikkelen we aanbevelingen voor duurzamere AI-praktijken.",
+          "Binnen duurzaamheid richten we ons op energieverbruik, de CO2-voetafdruk en het gebruik van hulpbronnen. Met onderzoek en samenwerking willen we bijdragen aan meer inzicht en duurzamere AI-praktijken.",
       },
       {
         title: "Kernthema's",
@@ -166,10 +162,10 @@ export default function Activiteiten() {
       {/* CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-[#0B2545] mb-4">Ontdek onze resultaten</h2>
-          <p className="text-gray-600 mb-6">Bekijk wat we hebben gevonden via ons onderzoek en onze analyses.</p>
+          <h2 className="text-2xl font-bold text-[#0B2545] mb-4">Volg ons onderzoek</h2>
+          <p className="text-gray-600 mb-6">Resultaten delen we zodra ons Nederlandse onderzoek deze oplevert.</p>
           <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">
-            <Link to="/resultater">
+            <Link to="/nl/resultaten">
               Bekijk resultaten <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </Button>

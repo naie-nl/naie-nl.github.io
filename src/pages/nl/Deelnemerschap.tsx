@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import MembershipForm from "@/components/MembershipFormNo";
+import MembershipForm from "@/components/MembershipFormNl";
 
-export default function Medlemskap() {
+export default function Deelnemerschap() {
   return (
     <div className="min-h-screen bg-[#F6F6F6] overflow-x-hidden" style={{ fontFamily: "Inter, sans-serif" }}>
       <Navigation />
@@ -17,8 +17,8 @@ export default function Medlemskap() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Deelnemerschap</h1>
             <p className="text-lg text-purple-200 leading-relaxed">
-              NAIE is een onafhankelijke non-profitorganisatie die zich inzet voor ethisch en verantwoord gebruik van kunstmatige intelligentie in Noorwegen.
-              Het deelnemerschap staat open voor individuen die ons werk willen ondersteunen of op termijn een professionele bijdrage willen leveren.
+              NAIE is een onafhankelijke stichting zonder winstoogmerk die zich inzet voor ethisch en verantwoord gebruik van kunstmatige intelligentie in Nederland.
+              Als deelnemer maakt u deel uit van de gemeenschap rond NAIE en kunt u samen met anderen bijdragen aan ons werk.
             </p>
           </div>
         </div>
@@ -40,17 +40,13 @@ export default function Medlemskap() {
                       <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Hoe werkt het deelnemerschap?</h2>
                       <div className="space-y-3 text-gray-600 leading-relaxed">
                         <p>
-                          Alle deelnemers starten als <span className="font-medium text-[#0B2545]">steundeelnemer</span>.
-                          Als steundeelnemer ondersteunt u de doelstellingen van NAIE en kunt u ons werk volgen, deelnemen aan activiteiten en bijdragen op de manier die u wilt.
+                          Als deelnemer bent u betrokken bij het werk van NAIE. Het deelnemerschap biedt een manier om deel uit te maken van de stichting en samen met anderen bij te dragen aan ethisch en verantwoord gebruik van AI.
                         </p>
                         <p>
-                          Na een periode van actieve deelname (meestal 6-12 maanden) kunnen steundeelnemers een aanvraag indienen om
-                          <span className="font-medium text-[#0B2545]"> stemgerechtigd deelnemer</span> te worden.
-                          Stemgerechtigde deelnemers hebben formeel stemrecht op de jaarvergadering en kunnen worden gekozen in het bestuur of andere vertrouwensposities.
+                          U kunt uw kennis, ervaring of tijd inzetten voor projecten, werkgroepen, activiteiten of praktische ondersteuning. Verschillende achtergronden en perspectieven zijn welkom; u hoeft geen AI-specialist te zijn om bij te dragen.
                         </p>
                         <p>
-                          Deelnemerschap geeft niet automatisch stemrecht. Het bestuur beoordeelt aanvragen voor stemrecht op basis van
-                          concrete bijdragen, betrokkenheid en activiteit binnen de stichting.
+                          Deelnemerschap is geen lidmaatschap van een vereniging en geeft geen stemrecht. Het bestuur draagt de verantwoordelijkheid voor het beleid en de besluiten van de stichting. Deelnemers kunnen ideeën en suggesties inbrengen en meedenken over het werk van NAIE.
                         </p>
                       </div>
                     </div>
@@ -65,7 +61,7 @@ export default function Medlemskap() {
                       <CheckCircle2 className="w-6 h-6 text-[#134074]" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Wat wordt beschouwd als actieve deelname?</h2>
+                      <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Hoe kunt u bijdragen?</h2>
                       <p className="text-gray-600 leading-relaxed">
                         Actieve deelname gaat over hoe u bijdraagt aan het werk en de doelen van de stichting. Dit kan bijvoorbeeld door:
                       </p>
@@ -83,7 +79,7 @@ export default function Medlemskap() {
                         ))}
                       </ul>
                       <p className="mt-4 text-gray-600 leading-relaxed">
-                        Dit zijn voorbeelden, geen harde eisen. Het bestuur beoordeelt elk geval in het licht van het doel en de praktijk van de stichting.
+                        Er zijn verschillende manieren om mee te doen. Samen kijken we welke bijdrage past bij uw interesses, ervaring en beschikbare tijd.
                       </p>
                     </div>
                   </div>
@@ -99,10 +95,7 @@ export default function Medlemskap() {
                     <div>
                       <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Privacy en verwerking van deelnemersgegevens</h2>
                       <p className="text-gray-600 leading-relaxed">
-                        NAIE verwerkt persoonsgegevens in het kader van het deelnemerschap. De gegevens worden uitsluitend gebruikt voor de administratie van het deelnemerschap, communicatie en de beoordeling van de deelnemersstatus.
-                        We slaan alleen noodzakelijke informatie op, zoals naam, e-mailadres, eventuele organisatie-affiliatie (indien opgegeven) en de categorie van deelnemerschap.
-                        NAIE maakt gebruik van externe dienstverleners voor de veilige opslag van data. De verwerking vindt plaats in overeenstemming met de geldende privacywetgeving.
-                        U kunt op elk gewenst moment verzoeken om inzage, correctie of verwijdering van uw gegevens door contact met ons op te nemen.
+                        De gegevens die u via het formulier verstrekt, gebruiken we voor de deelnemersadministratie en communicatie over uw betrokkenheid bij NAIE. We publiceren geen deelnemersgegevens zonder toestemming. Voor vragen over uw gegevens kunt u contact met ons opnemen.
                       </p>
                     </div>
                   </div>
@@ -111,10 +104,10 @@ export default function Medlemskap() {
 
               <div className="flex flex-wrap gap-3">
                 <Button asChild variant="outline" className="rounded-lg">
-                  <Link to="/over-ons">Lees meer over NAIE</Link>
+                  <Link to="/nl/over-ons">Lees meer over NAIE</Link>
                 </Button>
                 <Button asChild className="bg-[#134074] hover:bg-[#0B2545] text-white font-semibold rounded-lg">
-                  <Link to="/kontakt">
+                  <Link to="/nl/contact">
                     Vragen? Neem contact op <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                 </Button>
@@ -127,7 +120,7 @@ export default function Medlemskap() {
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-[#0B2545] mb-2">Deelnemerschap aanvragen</h2>
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                    Vul het onderstaande formulier in om steundeelnemer te worden. Als u actief wilt bijdragen, kunt u hierover iets schrijven in het veld voor uw motivatie.
+                    Vul het onderstaande formulier in om u aan te melden als deelnemer. Vertel in het motivatieveld waarom u wilt meedoen en hoe u eventueel zou willen bijdragen.
                   </p>
                   <MembershipForm />
                 </CardContent>
@@ -137,8 +130,7 @@ export default function Medlemskap() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-[#0B2545] mb-2">Let op</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    We gebruiken twee categorieën deelnemerschap om onderscheid te maken tussen ondersteuning en formele verantwoordelijkheid.
-                    Het steundeelnemerschap is voor iedereen die mee wil doen. Stemgerechtigdheid is voor degenen die op de langere termijn een formelere verantwoordelijkheid binnen de stichting willen dragen.
+                    Deelnemers dragen bij aan het werk en de gemeenschap van NAIE. Het deelnemerschap geeft geen stemrecht; de bestuurlijke verantwoordelijkheid ligt bij het bestuur.
                   </p>
                 </CardContent>
               </Card>

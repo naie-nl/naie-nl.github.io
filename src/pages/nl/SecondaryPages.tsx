@@ -7,29 +7,28 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import GitHubRepoCard from "@/components/GitHubRepoCard";
 
 /* ===================== RESOURCES ===================== */
 export function Resources() {
   const resources = [
     {
       icon: FileText,
-      title: "NoBBQ Benchmark",
-      description: "Onze benchmark voor het meten van bias in grote taalmodellen in het Noors. Beschikbaar als open source.",
+      title: "NlBBQ — in voorbereiding",
+      description: "Gepland benchmarkproject voor onderzoek naar bias in taalmodellen in de Nederlandse context. Er zijn nog geen resultaten of datasets gepubliceerd.",
       link: "/nl/activiteiten/bias",
       linkText: "Lees meer",
     },
     {
       icon: BookOpen,
       title: "Rapporten en publicaties",
-      description: "Onderzoeksrapporten, analyses en publicaties uit het werk van NAIE op het gebied van AI-ethiek.",
+      description: "Hier vindt u toekomstige onderzoeksrapporten, analyses en publicaties van de Nederlandse stichting.",
       link: "/nl/resultaten",
       linkText: "Bekijk resultaten",
     },
     {
       icon: Video,
       title: "Presentaties",
-      description: "Opnames en materialen van conferenties, webinars en lezingen over AI-ethiek.",
+      description: "Materialen van toekomstige presentaties, webinars en lezingen over AI-ethiek komen hier beschikbaar.",
       link: "/nl/pers-en-events",
       linkText: "Bekijk events",
     },
@@ -78,9 +77,6 @@ export function Resources() {
                 </CardContent>
               </Card>
             ))}
-          
-            {/* GitHub repo preview */}
-            <GitHubRepoCard owner="naie-no" repo="NoBBQ" />
           </div>
         </div>
       </section>
@@ -99,7 +95,7 @@ export function Nieuws() {
   ];
 
   return (
-    <PageWrapper title="Nieuws" subtitle="Laatste nieuws van Norsk AI-Etikkforening.">
+    <PageWrapper title="Nieuws" subtitle="Laatste nieuws van Stichting Nederlands AI-Ethiek Instituut.">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
@@ -128,102 +124,28 @@ export function Nieuws() {
 
 /* ===================== PERS & EVENTS ===================== */
 export function PersEnEvents() {
-  const pressItems = [
-    {
-      type: "Evenement",
-      icon: Calendar,
-      title: "Juni 2026 - EuroSTAR",
-      description: "We delen onze nieuwste NoBBQ-resultaten op een van Europa's grootste softwaretestconferenties.",
-      link: "https://conference.eurostarsoftwaretesting.com/event/2026/can-we-measure-local-bias-in-ai-systems/",
-    },
-    {
-      type: "Pers",
-      icon: Mic,
-      title: "Januari 2026 - Podcast Vooroordelen in AI-systemen",
-      description: "We praten met Simen Sommerfeldt van Bouvet over vooroordelen in AI-systemen.",
-      link: "https://www.bouvet.no/podcasts/fordommer-i-ai",
-    },
-    {
-      type: "Evenement",
-      icon: Calendar,
-      title: "September 2025: GoForIt: AI in de publieke sector conferentie",
-      description: "We presenteren onze bevindingen op de GoForIt-conferentie.",
-      link: "https://tankesmiengoforit.no/event/program-ki-i-offentlig-sektor-2025/",
-    },
-    {
-      type: "Evenement",
-      icon: Calendar,
-      title: "September 2025 - ODIN",
-      description: "We delen onze nieuwste inzichten op de grootste testconferentie van Noorwegen.",
-      link: "https://event.checkin.no/104532/testkonferansen-odin-2025",
-    },
-  ];
-
   return (
-    <PageWrapper title="Pers & events" subtitle="Blijf op de hoogte van events en media-aandacht van NAIE.">
+    <PageWrapper title="Pers & events" subtitle="Nieuws over presentaties, evenementen en media-aandacht van de Nederlandse stichting.">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
-            {pressItems.map((item, i) => {
-			  const isExternal = item.link.startsWith("http");
-
-			  const Wrapper = isExternal ? "a" : Link;
-			  const wrapperProps = isExternal
-				? {
-					href: item.link,
-					target: "_blank",
-					rel: "noopener noreferrer",
-				  }
-				: {
-					to: item.link,
-				  };
-
-			  return (
-				<Wrapper
-				  key={i}
-				  {...wrapperProps}
-				  className="block group"
-				>
-				  <Card className="border-0 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer">
-					<CardContent className="p-6">
-					  <div className="flex items-start gap-4">
-						<div className="w-12 h-12 bg-[#E0F2FE] rounded-lg flex items-center justify-center shrink-0 group-hover:bg-[#E0D8FF] transition-colors">
-						  <item.icon className="w-6 h-6 text-[#134074]" />
-						</div>
-						<div>
-						  <span className="text-xs font-semibold text-[#FF7A1A] uppercase tracking-wider">
-							{item.type}
-						  </span>
-						  <h3 className="text-lg font-bold text-[#0B2545] mt-1 group-hover:text-[#134074] transition-colors">
-							{item.title}
-						  </h3>
-						  <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-							{item.description}
-						  </p>
-						</div>
-					  </div>
-					</CardContent>
-				  </Card>
-				</Wrapper>
-			  );
-			})}
-          </div>
+          <Card className="border-0 shadow-md"><CardContent className="p-8">
+            <p className="text-gray-600 leading-relaxed">Er zijn hier nog geen persberichten of evenementen gepubliceerd. Nieuwe bijdragen van de Nederlandse stichting verschijnen op deze pagina.</p>
+          </CardContent></Card>
         </div>
       </section>
     </PageWrapper>
   );
 }
 
-/* ===================== VOOR ORGANISATIES ===================== */
 export function VoorOrganisaties() {
   const offerings = [
     {
       title: "Inhoudelijke lezingen en presentaties",
       icon: Mic,
       description:
-        "Presentaties over bias en ethische uitdagingen in generatieve AI, met speciale aandacht voor de Noorse taal, cultuur en samenleving.",
+        "Presentaties over bias en ethische uitdagingen in generatieve AI, met speciale aandacht voor de Nederlandse taal, cultuur en samenleving.",
       bullets: [
-        "Wat is bias in generatieve AI, en waarom is dit relevant in Noorwegen",
+        "Wat is bias in generatieve AI, en waarom is dit relevant in Nederland",
         "Risico's van het gebruik van AI in de publieke sector en maatschappelijk kritische diensten",
         "Inzichten en geleerde lessen uit het lopende onderzoek van NAIE",
       ],
@@ -255,7 +177,7 @@ export function VoorOrganisaties() {
   return (
     <PageWrapper
       title="Voor organisaties"
-      subtitle="Professionele bijdragen voor een beter begrip van vooroordelen (bias), ethiek en maatschappelijke effecten van kunstmatige intelligentie in een Noorse context."
+      subtitle="Professionele bijdragen voor een beter begrip van vooroordelen (bias), ethiek en maatschappelijke effecten van kunstmatige intelligentie in een Nederlandse context."
     >
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -265,7 +187,7 @@ export function VoorOrganisaties() {
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Stichting Nederlands AI-Ethiek Instituut (NAIE) is een non-profitorganisatie die zich inzet voor een beter begrip van vooroordelen (bias),
-                  ethiek en maatschappelijke effecten van kunstmatige intelligentie in een Noorse context.
+                  ethiek en maatschappelijke effecten van kunstmatige intelligentie in een Nederlandse context.
                 </p>
                 <p>
                   Naast het delen van open onderzoek en inzichten, bieden we professionele bijdragen aan organisaties die hun
@@ -341,7 +263,7 @@ export function Contact() {
               <h2 className="text-2xl font-bold text-[#0B2545] mb-6">Contactinformatie</h2>
               <div className="space-y-6">
                 {[
-                  { icon: Mail, label: "E-mail", value: "kontakt@naie.no" },
+                  { icon: Mail, label: "E-mail", value: "contact@naie.nl" },
                   { icon: MapPin, label: "Adres", value: "Albert van Damstraat 4\n1689XN Zwaag" },
                   { icon: Phone, label: "KVK-nr (Org.nr)", value: "42075283" },
                 ].map((item) => (
@@ -378,7 +300,7 @@ export function Contact() {
                   <h2 className="text-2xl font-bold text-[#0B2545] mb-6">Stuur ons een bericht</h2>
 					<form
 					  className="space-y-5"
-					  action="https://formspree.io/f/mdalyoko"
+					  action="https://formspree.io/f/xoedjzgn"
 					  method="POST"
 					>
 					  {/* Honeypot (eenvoudig spamfilter) */}

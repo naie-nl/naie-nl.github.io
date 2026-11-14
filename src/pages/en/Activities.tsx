@@ -5,38 +5,34 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+type ActivitySection = { title: string; content?: string; points?: string[] };
+
 const activities = {
   overview: {
     title: "Activities",
-    subtitle: "NAIE works with three main pillars to promote ethical and responsible AI in Norway.",
+    subtitle: "NAIE works with three main pillars to promote ethical and responsible AI in the Netherlands.",
   },
   bias: {
     title: "Bias",
     icon: BarChart3,
     color: "#134074",
     image: "https://mgx-backend-cdn.metadl.com/generate/images/974861/2026-02-17/2c507247-45cd-446a-a931-cc2cf506b4f8.png",
-    intro: "NAIE investigates and measures bias in AI systems through systematic testing and benchmarking.",
+    intro: "NAIE is preparing research into bias in AI systems, starting with the planned NlBBQ benchmark.",
     sections: [
       {
-        title: "NoBBQ – Norwegian Bias Benchmark for Question-answering",
-        content:
-          "NoBBQ is Norway’s first benchmark specifically designed to measure bias in large language models (LLMs) in Norwegian. The benchmark tests AI models for skew related to protected categories such as gender, ethnicity, religion, age, disability, and sexual orientation.",
+            "title": "NlBBQ — in preparation",
+            "content": "NlBBQ is our planned benchmark project for examining bias in language models in Dutch language and social context."
       },
       {
-        title: "How does NoBBQ work?",
-        content:
-          "NoBBQ consists of thousands of questions designed to uncover implicit and explicit bias in AI answers. Models are tested with contextual scenarios where the answer should not be influenced by stereotypes or prejudice. We analyze the responses systematically to identify patterns of skew.",
+            "title": "Our approach",
+            "content": "Preparation focuses on meaningful scenarios and careful localisation to Dutch society. Future publications will explain the methodology and its limitations."
       },
       {
-        title: "Results and findings",
-        points: [
-          "Over 1200 AI-generated answers have been analyzed",
-          "Significant differences in bias levels between different models",
-          "Norway’s first systematic bias indicator for AI",
-          "Collaboration with LDO to connect findings to anti-discrimination legislation",
-        ],
-      },
-    ],
+            "title": "Publications",
+            "content": "No NlBBQ results or datasets have been published on this website yet. Findings will be shared on the results page when available.",
+            "points": []
+      }
+] as ActivitySection[],
   },
   "responsible-ai": {
     title: "Responsible AI",
@@ -82,7 +78,7 @@ const activities = {
       {
         title: "Our work",
         content:
-          "We measure and report on energy consumption and carbon footprint related to AI systems used in Norway. Through research and collaboration, we develop recommendations for more sustainable AI practice.",
+          "Our sustainability work focuses on energy use, carbon footprint, and resource consumption. We aim to contribute to better understanding and more sustainable AI practice through research and collaboration.",
       },
       {
         title: "Key topics",
@@ -166,8 +162,8 @@ export default function Activities() {
       {/* CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-[#0B2545] mb-4">Explore our results</h2>
-          <p className="text-gray-600 mb-6">See what we have found through our research and analysis.</p>
+          <h2 className="text-2xl font-bold text-[#0B2545] mb-4">Follow our research</h2>
+          <p className="text-gray-600 mb-6">Results will be shared as our Dutch research develops.</p>
           <Button asChild size="lg" className="bg-[#FF7A1A] hover:bg-[#E85E00] text-white font-semibold rounded-lg">
             <Link to="/en/results">
               View results <ArrowRight className="ml-2 w-4 h-4" />

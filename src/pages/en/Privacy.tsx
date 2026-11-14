@@ -14,8 +14,8 @@ export default function Privacy() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy</h1>
           <p className="text-lg text-purple-200 leading-relaxed">
-            The Norwegian AI Ethics Association (NAIE) processes personal data in a responsible and transparent manner.
-            This page explains how we handle data related to membership and contact.
+            Stichting Nederlands AI-Ethiek Instituut (NAIE) processes personal data in a responsible and transparent manner.
+            This page explains how we handle data related to participation and contact.
           </p>
         </div>
       </section>
@@ -27,21 +27,21 @@ export default function Privacy() {
           <div>
             <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Who is the data controller?</h2>
             <p>
-              The Norwegian AI Ethics Association (NAIE) is the data controller for personal data collected through our website and in connection with membership.
+              Stichting Nederlands AI-Ethiek Instituut (NAIE) is the data controller for personal data collected through our website and in connection with participation.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-[#0B2545] mb-3">What information do we collect?</h2>
             <p>
-              In connection with membership and contact, we may process the following information:
+              In connection with participation and contact, we may process the following information:
             </p>
             <ul className="mt-4 space-y-2 list-disc pl-6">
               <li>Name</li>
               <li>Email address</li>
               <li>Affiliation (if provided)</li>
-              <li>Membership category and status</li>
-              <li>Date of registration and any changes in membership status</li>
+              <li>Participant registration details</li>
+              <li>Date of registration and any changes in participation status</li>
             </ul>
             <p className="mt-4">
               We do not collect sensitive personal data.
@@ -54,28 +54,28 @@ export default function Privacy() {
               The information is used solely for:
             </p>
             <ul className="mt-4 space-y-2 list-disc pl-6">
-              <li>Administration of membership</li>
-              <li>Communication with members</li>
-              <li>Assessment of membership status in accordance with the association’s statutes</li>
+              <li>Administration of participation</li>
+              <li>Communication with participants</li>
+              <li>Responding to enquiries and coordinating participation</li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Storage and security</h2>
             <p>
-              NAIE uses external service providers for the secure storage of membership data.
+              NAIE uses external service providers for the secure storage of participation data.
               Processing is carried out in accordance with applicable data protection regulations.
             </p>
             <p className="mt-4">
-              Access to membership data is limited to the board and is used solely for association administration.
+              Access to participation data is limited to the board and is used solely for foundation administration.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-[#0B2545] mb-3">Retention period</h2>
             <p>
-              Information about active members is stored as long as the membership remains active.
-              Information about former members is normally deleted within 12 months after membership has ended,
+              Information about active participants is stored as long as the participation remains active.
+              Information about former participants is normally deleted within 12 months after participation has ended,
               unless there is a legitimate reason for continued storage.
             </p>
           </div>

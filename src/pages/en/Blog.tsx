@@ -7,7 +7,16 @@ import { useEffect, useMemo, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import { BLOGS } from "@/content/en/blog";
+// Add only posts published by the Dutch foundation here.
+type BlogEntry = {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  externalUrl?: string;
+  file: () => Promise<{ default: string }>;
+};
+const BLOGS: BlogEntry[] = [];
 
 function PageWrapper({
   title,
@@ -38,10 +47,13 @@ function PageWrapper({
 /* ===================== BLOG LIST ===================== */
 export function Blog() {
   return (
-    <PageWrapper title="Blog" subtitle="All blog posts from NAIE.">
+    <PageWrapper title="Blog" subtitle="Articles and reflections from the Dutch Institute for AI Ethics.">
       <section className="pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
+            {BLOGS.length === 0 && (
+              <Card className="border-0 shadow-md"><CardContent className="p-8"><p className="text-gray-600 leading-relaxed">No blog posts have been published yet. Articles and reflections from the Dutch foundation will appear here.</p></CardContent></Card>
+            )}
             {BLOGS
               .slice()
               .sort((a, b) => (a.date < b.date ? 1 : -1))
@@ -64,7 +76,7 @@ export function Blog() {
                             rel="noreferrer"
                             className="mt-3 text-[#FF7A1A] text-sm font-medium inline-flex items-center gap-1 hover:gap-2 transition-all"
                           >
-                            Read on naie.no <ArrowRight className="w-4 h-4" />
+                            Read the article <ArrowRight className="w-4 h-4" />
                           </a>
                         ) : (
                           <Link

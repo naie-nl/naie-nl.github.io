@@ -40,7 +40,7 @@ export default function Privacy() {
               <li>Naam</li>
               <li>E-mailadres</li>
               <li>Eventuele organisatie-affiliatie (indien opgegeven)</li>
-              <li>Deelnemerscategorie en deelnemersstatus</li>
+              <li>Aanmeldgegevens als deelnemer</li>
               <li>Datum van aanmelding en eventuele wijzigingen in de deelnemersstatus</li>
             </ul>
             <p className="mt-4">
@@ -56,7 +56,7 @@ export default function Privacy() {
             <ul className="mt-4 space-y-2 list-disc pl-6">
               <li>De administratie van het deelnemerschap</li>
               <li>Communicatie met deelnemers</li>
-              <li>Beoordeling van de deelnemersstatus in overeenstemming met de statuten</li>
+              <li>Beantwoorden van vragen en afstemmen van deelname</li>
             </ul>
           </div>
 
