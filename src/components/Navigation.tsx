@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/naie_nl_logo_v1_with_text.svg";
+import logo from "@/assets/naie_nl_logo_v1_with_text_blue.svg";
 
 
 type Lang = "nl" | "en";
@@ -163,7 +163,7 @@ export default function Navigation() {
             <img
               src={logo}
               alt="NAIE logo"
-              className="h-10 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </Link>
 

@@ -154,7 +154,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom strip */}
-      <div className="bg-[#2E0F66] text-center text-xs py-4 text-purple-200">
+      <div className="bg-[#FF7A1A] text-center text-xs py-4 text-purple-200">
         © {new Date().getFullYear()} NAIE
       </div>
     </footer>
