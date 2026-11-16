@@ -207,7 +207,7 @@ export default function OmOss() {
                   <ul className="space-y-3 text-purple-200">
                     <li><span className="text-white font-medium">Naam:</span> Stichting Nederlands AI-Ethiek Instituut (NAIE)</li>
                     <li><span className="text-white font-medium">Type:</span> Onafhankelijke non-profitorganisatie</li>
-                    <li><span className="text-white font-medium">KVK-nr (Org.nr):</span> 932 552 728</li>
+                    <li><span className="text-white font-medium">KVK-nr (Org.nr):</span> 42075283</li>
                     <li><span className="text-white font-medium">Licentie:</span> CC BY 4.0</li>
                   </ul>
                 </div>
